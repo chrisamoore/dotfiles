@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/private/etc/apache2/extra'
+let g:netrw_dirhist_2='/usr/local/etc/nginx'
+let g:netrw_dirhist_3='/Users/chris/Sites/kareer-box'
+let g:netrw_dirhist_4='/Users/chris/Sites/kareer-box/kme-box-config'
+let g:netrw_dirhist_5='/Users/chris/Sites/kareer-box'
+let g:netrw_dirhist_6='/Users/chris/Sites/kareer-box/scripts'
