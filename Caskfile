@@ -5,8 +5,6 @@ install caskroom/cask/brew-cask
 tap caskroom/homebrew-versions
 
 # daily
-cask install alfred 				2> /dev/null
-cask install dropbox 				2> /dev/null
 cask install onepassword 				2> /dev/null
 
 # dev
