@@ -1,5 +1,5 @@
 set -o vi
-
+alias unhide='defaults write com.apple.finder AppleShowAllFiles YES && killAll Finder'
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -181,9 +181,17 @@ plugins=(gitfast, lol, git-extras, colorize, composer, history, node-api, npm, o
 source $ZSH/oh-my-zsh.sh
 
 #PATHS
-export PATH=$PATH:~/.composer/vendor/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/opt/ruby/bin:
+export GOPATH=$HOME/go
+export COMPOSER=~/.composer/vendor/bin:
+export NODE=/usr/local/bin/node:
+export NPM=/usr/local/bin/npm:
+export ANDROIDTOOLS=/Applications/android-sdk/platform-tools:
+export RUBY=/usr/local/opt/ruby/bin:
 
-# Sexy Bash Prompt, inspired by "Extravagant Zsh Prompt"
+export PATH=$PATH:$COMPOSER/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$NODE:$NPM:$ANDROIDTOOLS:$RUBY
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+
+ #Sexy Bash Prompt, inspired by "Extravagant Zsh Prompt"
 # Screenshot: http://img.gf3.ca/d54942f474256ec26a49893681c49b5a.png
 # A big thanks to \amethyst on Freenode
 export EDITOR='vim'
