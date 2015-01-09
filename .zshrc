@@ -41,6 +41,7 @@ alias lrt='ls -lrt'
 alias t='tree'
 alias home='cd ${HOME}'
 alias up='cd ..'
+alias htr='history | grep'
 
 ###########
 # Vagrant #
@@ -138,6 +139,18 @@ alias dot='. ~/.zshrc'
         }
 
   #committing
+    alias gad='git add . --all'
+    alias gph='git push -u'
+    alias gpl='git pull'
+    alias gcm='git commit -am'
+    alias gco='git checkout'
+    alias gcb='git checkout -b'
+    alias gfu='git fetch upstream'
+    alias gfo='git fetch origin'
+    alias grv='git remote -v'
+    alias gra='git remote add'
+    alias grm='git remote rm'
+    alias gst='git status'
     #Git pull w/o commit
     alias no_commit='git pull --no-commit'
 
