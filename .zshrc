@@ -21,39 +21,6 @@ pass=${bldblu}*${txtrst}
 warn=${bldred}*${txtrst}
 ques=${bldblu}?${txtrst}
 
-alias rm='rm -i'
-alias df='df -h'
-
-# cd
-alias ..='cd ..'
-
-alias ls="/bin/ls $LS_OPTIONS"
-alias ll='ls -l'
-alias lsd='ls -ld'
-alias la='ls -a'
-alias lf='ls -F'
-alias lr='ls -alFRt'
-alias lx='ls -xF'
-alias llar='ls -laFR'
-alias lt='ls -lartF'
-alias lrt='ls -lrt'
-alias t='tree'
-alias home='cd ${HOME}'
-alias up='cd ..'
-alias htr='history | grep'
-
-###########
-# Vagrant #
-###########
-alias vup="vagrant up"
-alias vd="vagrant destroy -f"
-alias vssh="vagrant ssh"
-alias vsus="vagrant suspend"
-
-# DIRS
-alias etc='cd /etc/'
-alias dot='. ~/.zshrc'
-
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -75,6 +42,7 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(gitfast, git-extras, colorize, composer, history, node-api, npm, osx, vagrant, zsh-syntax-highlighting, screen)
 
 source $ZSH/oh-my-zsh.sh
+source $HOME/.zsh_profile
 source $HOME/.zsh_paths
 source $HOME/.zsh_git
 
