@@ -8,6 +8,7 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="cam"
+DISABLE_UPDATE_PROMPT=true
 
 # Example aliases
 txtund=$(tput sgr 0 1)          # Underline
@@ -28,7 +29,7 @@ ques=${bldblu}?${txtrst}
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment following line if you want to disable colors in ls
-# DISABLE_LS_COLORS="true"
+DISABLE_LS_COLORS="false"
 
 # Uncomment following line if you want to disable autosetting terminal title.
 # DISABLE_AUTO_TITLE="true"
@@ -40,6 +41,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(gitfast, git-extras, colorize, composer, history, node-api, npm, osx, vagrant, zsh-syntax-highlighting, screen, brew, brew-cask, go, jsontools, redis-clii, zsh_reload)
+
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.zsh_profile

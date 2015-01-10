@@ -2,8 +2,9 @@ alias rm='rm -i'
 alias df='df -h'
 alias etc='cd /etc/'
 alias dot='. ~/.zshrc'
+
 alias ..='cd ..'
-alias ls="/bin/ls $LS_OPTIONS"
+alias ls="ls -G $LS_OPTIONS"
 alias ll='ls -l'
 alias lsd='ls -ld'
 alias la='ls -a'
