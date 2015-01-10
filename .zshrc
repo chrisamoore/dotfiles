@@ -9,7 +9,6 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="cam"
 
-# ZSH_THEME="crcandy"
 # Example aliases
 txtund=$(tput sgr 0 1)          # Underline
 txtbld=$(tput bold)             # Bold
@@ -55,122 +54,6 @@ alias vsus="vagrant suspend"
 alias etc='cd /etc/'
 alias dot='. ~/.zshrc'
 
-#git
-  alias showbranches='git for-each-ref --sort=-committerdate refs/heads/'
-  #tagging Reference a Commit
-    function tag(){
-      if [ -z $1 ]
-      then
-        echo -e "\033[1;31mPlease specify a tag name and a message."
-      else
-        git blame $1
-      fi
-      git tag -a $1 -m $2
-    }
-  #list tags (brief)
-   alias describe='git describe --tags'
-  #list tag (bexpanded)
-    function show(){
-      if [ -z $1 ]
-      then
-        echo -e "\033[1;31mPlease specify a tag name."
-      else
-      git show $1
-      fi
-    }
-
-  #Remove tag (bexpanded)
-    function kill_tag(){
-      if [ -z $1 ]
-      then
-        echo -e "\033[1;31mPlease specify a tag name."
-      else
-      git tag $1 -d
-      git push origin :refs/tags/$1
-      fi
-    }
-
-  #add tags to repo -> then sync
-   alias push_tags='git push --tags'
-
-  #stashing
-    #list Local Changes
-      alias stashes='git stash list'
-    #Save Local Changes
-     alias stash='git stash save "msg"'
-
-  #blame Who Did What when and where
-    function blame(){
-      if [ -z $1 ]
-      then
-        echo -e "\033[1;31mPlease Specify a file."
-      else
-        git blame $1
-      fi
-    }
-  #branching
-    #create new branch
-      function branch(){
-        if [ -z $1 ]
-        then
-          echo -e "\033[1;31mPlease specify a branch name."
-        else
-        git checkout -b $1
-        fi
-      }
-    #switch to branch
-      function checkout(){
-         if [ -z $1 ]
-          then
-            echo -e "\033[1;31mPlease specify a branch name."
-          else
-          git checkout $1
-          fi
-      }
-    #merge branch
-      function merge(){
-         if [ -z $1 ]
-        then
-          echo -e "\033[1;31mPlease specify a branch name."
-        else
-          git merge $1
-
-          fi
-        }
-
-  #committing
-    alias gad='git add . --all'
-    alias gph='git push -u'
-    alias gpl='git pull'
-    alias gcm='git commit -am'
-    alias gco='git checkout'
-    alias gcb='git checkout -b'
-    alias gfu='git fetch upstream'
-    alias gfo='git fetch origin'
-    alias grv='git remote -v'
-    alias gra='git remote add'
-    alias grm='git remote rm'
-    alias gst='git status'
-    #Git pull w/o commit
-    alias no_commit='git pull --no-commit'
-
-    function commit(){
-       if [ -z $1 ]
-        then
-          echo -e "\033[1;31mPlease specify a branch name."
-        else
-        git commit -am "$1"
-        echo "Committed to [repoName]"
-        fi
-      }
-  #Statuses
-    alias status='git status'
-    #Git Log
-      function git_log(){
-        git log --oneline --graph --all --decorate
-      }
-
-
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -189,25 +72,16 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(gitfast, lol, git-extras, colorize, composer, history, node-api, npm, osx, vagrant, zsh-syntax-highlighting, screen)
+plugins=(gitfast, git-extras, colorize, composer, history, node-api, npm, osx, vagrant, zsh-syntax-highlighting, screen)
 
 source $ZSH/oh-my-zsh.sh
+source $HOME/.zsh_paths
+source $HOME/.zsh_git
 
-#PATHS
-export GOPATH=$HOME/go
-export COMPOSER=~/.composer/vendor/bin:
-export NODE=/usr/local/bin/node:
-export NPM=/usr/local/bin/npm:
-export ANDROIDTOOLS=/Applications/android-sdk/platform-tools:
-export RUBY=/usr/local/opt/ruby/bin:
-
-export PATH=$PATH:$COMPOSER/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$NODE:$NPM:$ANDROIDTOOLS:$RUBY
-export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
-
- #Sexy Bash Prompt, inspired by "Extravagant Zsh Prompt"
+#Sexy Bash Prompt, inspired by "Extravagant Zsh Prompt"
 # Screenshot: http://img.gf3.ca/d54942f474256ec26a49893681c49b5a.png
 # A big thanks to \amethyst on Freenode
-export EDITOR='vim'
+export EDITOR='subl -w'
 
 if [[ $COLORTERM = gnome-* && $TERM = xterm ]]  && infocmp gnome-256color >/dev/null 2>&1; then export TERM=gnome-256color
 elif infocmp xterm-256color >/dev/null 2>&1; then export TERM=xterm-256color
@@ -239,12 +113,5 @@ else
     BOLD=""
     RESET="\033[m"
 fi
-
-parse_git_dirty () {
-  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "*)"
-}
-parse_git_branch () {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
-}
 
  #PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]at \[$ORANGE\]\h \[$WHITE\]in \[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$WHITE\]\n\$ \[$RESET\]"

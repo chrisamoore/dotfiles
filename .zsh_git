@@ -1,0 +1,114 @@
+#git
+#add tags to repo -> then sync
+alias push_tags='git push --tags'
+#stashing
+#list Local Changes
+alias gstashes='git stash list'
+#Save Local Changes
+alias gstash='git stash save "msg"'
+alias gad='git add . --all'
+alias gph='git push -u'
+alias gpl='git pull'
+alias gcm='git commit -am'
+alias gco='git checkout'
+alias gcb='git checkout -b'
+alias gfu='git fetch upstream'
+alias gfo='git fetch origin'
+alias grv='git remote -v'
+alias gra='git remote add'
+alias grm='git remote rm'
+alias gst='git status'
+#list tags (brief)
+alias gdesc='git describe --tags'
+#Git pull w/o commit
+alias no_commit='git pull --no-commit'
+alias showbranches='git for-each-ref --sort=-committerdate refs/heads/'
+alias glog='git log --oneline --graph --all --decorate'
+
+#tagging Reference a Commit
+function tag(){
+  if [ -z $1 ]
+  then
+    echo -e "\033[1;31mPlease specify a tag name and a message."
+  else
+    git blame $1
+  fi
+  git tag -a $1 -m $2
+}
+#list tag (bexpanded)
+function show(){
+  if [ -z $1 ]
+  then
+    echo -e "\033[1;31mPlease specify a tag name."
+  else
+  git show $1
+  fi
+}
+
+#Remove tag (bexpanded)
+function kill_tag(){
+  if [ -z $1 ]
+  then
+    echo -e "\033[1;31mPlease specify a tag name."
+  else
+  git tag $1 -d
+  git push origin :refs/tags/$1
+  fi
+}
+
+#blame Who Did What when and where
+function blame(){
+  if [ -z $1 ]
+  then
+    echo -e "\033[1;31mPlease Specify a file."
+  else
+    git blame $1
+  fi
+}
+#branching
+#create new branch
+function branch(){
+  if [ -z $1 ]
+  then
+    echo -e "\033[1;31mPlease specify a branch name."
+  else
+  git checkout -b $1
+  fi
+}
+#switch to branch
+function checkout(){
+   if [ -z $1 ]
+    then
+      echo -e "\033[1;31mPlease specify a branch name."
+    else
+    git checkout $1
+    fi
+}
+
+#merge branch
+function merge(){
+  if [ -z $1 ]
+    then
+      echo -e "\033[1;31mPlease specify a branch name."
+    else
+      git merge $1
+  fi
+}
+
+#committing
+function commit(){
+  if [ -z $1 ]
+    then
+      echo -e "\033[1;31mPlease specify a branch name."
+    else
+      git commit -am "$1"
+      echo "Committed to [repoName]"
+  fi
+}
+
+parse_git_dirty () {
+  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "*)"
+}
+parse_git_branch () {
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
+}

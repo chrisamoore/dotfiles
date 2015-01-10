@@ -1,0 +1,10 @@
+#PATHS
+export GOPATH=$HOME/go:/usr/local/go/bin:
+export COMPOSER=~/.composer/vendor/bin:vendor/bin:
+export NODE=/usr/local/bin/node:node_modules/.bin:
+export NPM=/usr/local/bin/npm:
+export ANDROIDTOOLS=/Applications/android-sdk/platform-tools:
+export RUBY=/usr/local/opt/ruby/bin:
+
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$NODE:$NPM:$COMPOSER:$ANDROIDTOOLS:$RUBY

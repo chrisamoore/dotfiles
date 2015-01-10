@@ -1,0 +1,32 @@
+alias rm='rm -i'
+alias df='df -h'
+alias etc='cd /etc/'
+alias dot='. ~/.zshrc'
+alias ..='cd ..'
+alias ls="/bin/ls $LS_OPTIONS"
+alias ll='ls -l'
+alias lsd='ls -ld'
+alias la='ls -a'
+alias lf='ls -F'
+alias lr='ls -alFRt'
+alias lx='ls -xF'
+alias llar='ls -laFR'
+alias lt='ls -lartF'
+alias lrt='ls -lrt'
+alias t='tree'
+alias home='cd ${HOME}'
+alias up='cd ..'
+alias htr='history | grep'
+
+###########
+# Vagrant #
+###########
+alias vup="vagrant up"
+alias vd="vagrant destroy -f"
+alias vssh="vagrant ssh"
+alias vsus="vagrant suspend"
+
+#############
+# Multitail #
+#############
+alias mt='multitail --config ~/.multitail -CS php'
