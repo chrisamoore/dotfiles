@@ -3,7 +3,7 @@
 
 # https://github.com/jamiew/git-friendly
 # the `push` command which copies the github compare URL to my clipboard is heaven
-bash < <( curl https://raw.github.com/jamiew/git-friendly/master/install.sh)
+# bash < <( curl https://raw.github.com/jamiew/git-friendly/master/install.sh)
 
 # https://rvm.io
 # rvm for the rubiess
@@ -12,7 +12,7 @@ curl -L https://get.rvm.io | bash -s stable --ruby
 # https://github.com/isaacs/nave
 # needs npm, obviously.
 # TODO: I think i'd rather curl down the nave.sh, symlink it into /bin and use that for initial node install.
-npm install -g nave
+# npm install -g nave
 
 # homebrew!
 # you need the code CLI tools YOU FOOL.
@@ -22,11 +22,12 @@ mkdir $HOME/.homebrew && curl -L https://github.com/mxcl/homebrew/tarball/master
 export PATH=$HOME/.homebrew/bin:$HOME/.homebrew/sbin:$PATH
 
 
+
 # https://github.com/rupa/z
 # z, oh how i love you
-cd ~/code
-git clone https://github.com/rupa/z.git
-chmod +x ~/code/z/z.sh
+# cd ~/code
+# git clone https://github.com/rupa/z.git
+# chmod +x ~/code/z/z.sh
 # also consider moving over your current .z file if possible. it's painful to rebuild :)
 
 # z binary is already referenced from .bash_profile
@@ -34,8 +35,8 @@ chmod +x ~/code/z/z.sh
 
 # https://github.com/thebitguru/play-button-itunes-patch
 # disable itunes opening on media keys
-cd ~/code
-git clone https://github.com/thebitguru/play-button-itunes-patch
+# cd ~/code
+# git clone https://github.com/thebitguru/play-button-itunes-patch
 
 # my magic photobooth symlink -> dropbox. I love it.
 # first move Photo Booth folder out of Pictures
@@ -51,3 +52,9 @@ sudo easy_install Pygments
 
 # chrome canary as default
 # on a mac you can set chrome canary as your default inside of Safari preferences :)
+
+# Setup Mongo
+mkdir - p ~/code
+cd ~/Code/mongo-hacker
+make
+git clone git@github.com:TylerBrock/mongo-hacker.git

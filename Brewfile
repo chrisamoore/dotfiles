@@ -18,8 +18,6 @@ install findutils
 install gnu-sed --default-names
 # Install Bash 4
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`.
-install bash
-install bash-completion
 install zsh
 
 # Install wget with IRI support
