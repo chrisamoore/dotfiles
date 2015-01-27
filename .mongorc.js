@@ -933,6 +933,7 @@ prompt = function() {
         };
     }
     var state = isMongos() ? '[mongos]' : rs_state;
+    colorize('╭─', {color:'red'});
 
     return '╭─' + host + state + '/' + db + ': \n╰─';
 };
