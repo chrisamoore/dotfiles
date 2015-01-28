@@ -47,7 +47,7 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.zsh_profile
 source $HOME/.zsh_paths
 source $HOME/.zsh_git
-
+source $HOME/.zsh_qalias
 #Sexy Bash Prompt, inspired by "Extravagant Zsh Prompt"
 # Screenshot: http://img.gf3.ca/d54942f474256ec26a49893681c49b5a.png
 # A big thanks to \amethyst on Freenode
