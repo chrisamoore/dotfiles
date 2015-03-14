@@ -1,0 +1,31 @@
+<application>
+  <component name="libraryTable">
+    <library name="jQuery UI-1.10.2" type="javaScript">
+      <properties>
+        <option name="frameworkName" value="jQuery UI" />
+      </properties>
+      <CLASSES>
+        <root url="file://$USER_HOME$/.WebIde60/system/extLibs/http_ajax.googleapis.com_ajax_libs_jqueryui_1.10.2_jquery-ui.js" />
+      </CLASSES>
+      <DOCUMENTATION>
+        <root url="http://jqueryui.com/demos" />
+      </DOCUMENTATION>
+      <SOURCES />
+    </library>
+    <library name="Puppet modules">
+      <CLASSES>
+        <root url="file://$USER_HOME$/.puppet/modules" />
+        <root url="file:///usr/share/puppet/modules" />
+        <root url="file:///opt/puppet/share/puppet/modules" />
+        <root url="file://$APPLICATION_PLUGINS_DIR$/puppet/lib/stubs" />
+      </CLASSES>
+      <SOURCES />
+    </library>
+    <library name="sass-stdlib">
+      <CLASSES />
+      <SOURCES>
+        <root url="file://$APPLICATION_HOME_DIR$/plugins/sass/lib/stubs/sass_functions.scss" />
+      </SOURCES>
+    </library>
+  </component>
+</application>

@@ -1,2 +1,5 @@
 *.DS_Store
-
+WebIde*/componentVersions/*
+WebIde*/eval/
+WebIde*/phpstorm*.key
+WebIde*/codestyles/Default*
