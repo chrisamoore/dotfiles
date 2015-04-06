@@ -1,5 +1,4 @@
 set -o vi
-alias unhide='defaults write com.apple.finder AppleShowAllFiles YES && killAll Finder'
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -40,8 +39,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(gitfast, git-extras, colorize, composer, history, node-api, npm, osx, vagrant, zsh-syntax-highlighting, screen, brew, brew-cask, go, jsontools, redis-clii, zsh_reload)
-
+plugins=(zsh_reload nvm brew gitfast git-prompt git-extras colorize colored-man composer history node-api npm osx vagrant zsh-syntax-highlighting screen jsontools zsh_reload bower redis-cli screen vagrant)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.zsh_profile

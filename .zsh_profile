@@ -2,6 +2,7 @@ alias rm='rm -i'
 alias df='df -h'
 alias etc='cd /etc/'
 alias dot='. ~/.zshrc'
+alias unhide='defaults write com.apple.finder AppleShowAllFiles YES && killAll Finder'
 
 alias ..='cd ..'
 alias ls="ls -G $LS_OPTIONS"
@@ -31,3 +32,4 @@ alias vsus="vagrant suspend"
 # Multitail #
 #############
 alias mt='multitail --config ~/.multitail -CS php'
+

@@ -1,5 +1,9 @@
 *~
 .DS_Store
 .idea
+*.log
+*.paw
 node_modules
 bower_components
+vendor
+coverage
