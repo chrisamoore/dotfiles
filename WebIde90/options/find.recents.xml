@@ -1,0 +1,36 @@
+<application>
+  <component name="FindRecents">
+    <findStrings>
+      <find>store</find>
+      <find>thisTicket</find>
+      <find>ticke</find>
+      <find>shop_i</find>
+      <find>shop_ema</find>
+      <find>Mail::queue</find>
+      <find>look</find>
+      <find>check</find>
+      <find>drop</find>
+      <find>tick</find>
+      <find>des</find>
+      <find>agend</find>
+      <find>jso</find>
+      <find>dell</find>
+      <find>sig</find>
+      <find>rel</find>
+      <find>dest</find>
+      <find>rece</find>
+      <find>queu</find>
+      <find>-&gt;artist</find>
+      <find>queue</find>
+      <find>loo</find>
+      <find>appoi</find>
+      <find>app</find>
+      <find>age</find>
+      <find>ag</find>
+      <find>upda</find>
+      <find>show</find>
+      <find>checkin</find>
+      <find>pre</find>
+    </findStrings>
+  </component>
+</application>

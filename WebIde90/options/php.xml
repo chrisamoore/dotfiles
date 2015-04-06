@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <component name="MessDetector">
+    <option name="messDetectorPath" value="$USER_HOME$/Sites/Stampede/Symfony/vendor/phpmd/phpmd/src/bin/phpmd" />
+  </component>
+  <component name="PhpAutoImport" auto_import_file_scope="true" />
+  <component name="PhpCodeSniffer">
+    <option name="phpCodeSnifferPath" value="$USER_HOME$/Sites/Stampede/Symfony/vendor/squizlabs/php_codesniffer/scripts/phpcs" />
+  </component>
+</application>
+

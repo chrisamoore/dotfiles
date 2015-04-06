@@ -1,0 +1,18 @@
+<templateSet group="symfony">
+  <template name="sf_json" value="$encoders = [new XmlEncoder(), new JsonEncoder()];&#10;$normalizers = [new GetSetMethodNormalizer()];&#10;$serializer = new Serializer($normalizers, $encoders);&#10;$data = $serializer-&gt;serialize($data, 'json');&#10;&#10;$response = new Response($data);&#10;$response-&gt;headers-&gt;set('Content-Type', 'application/json');&#10;return $response;" description="json_symfony_response" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+</templateSet>
