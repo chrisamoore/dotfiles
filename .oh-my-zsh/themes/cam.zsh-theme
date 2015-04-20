@@ -15,7 +15,6 @@ done
 eval PR_NO_COLOR="%{$terminfo[sgr0]%}"
 eval PR_BOLD="%{$terminfo[bold]%}"
 
-
 if [[ $UID -ge 1000 ]]; then # normal user
   eval PR_USER='${PR_GREEN}%n${PR_NO_COLOR}'
   eval PR_USER_OP='${PR_GREEN}%#${PR_NO_COLOR}'
@@ -47,7 +46,8 @@ fi
 local git_branch='$(git_prompt_info)%{$PR_NO_COLOR%}'
 
 #PROMPT="${user_host} ${current_dir} ${rvm_ruby} ${git_branch}$PR_PROMPT "
-PROMPT="╭─${user_host} ${current_dir} ${rvm_ruby} ${git_branch}
+# PROMPT="╭─${user_host} ${current_dir} ${rvm_ruby} ${git_branch}
+PROMPT="╭─${user_host} ${current_dir} ${rvm_ruby} $RPROMPT
 ╰─$PR_PROMPT "
 RPS1="${return_code}"
 
