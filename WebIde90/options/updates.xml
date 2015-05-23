@@ -1,21 +1,9 @@
 <application>
   <component name="UpdatesConfigurable">
-    <knownUpdateChannels>
-      <item value="WI1" />
-      <item value="WI2" />
-      <item value="WI3" />
-      <item value="WI4" />
-      <item value="WI5" />
-      <item value="WI6" />
-      <item value="WI7" />
-      <item value="WI8" />
-      <item value="EAP" />
-    </knownUpdateChannels>
-    <ignoredBuildNumbers>
-      <item value="139.1348" />
-    </ignoredBuildNumbers>
-    <option name="LAST_TIME_CHECKED" value="1422162444939" />
-    <option name="LAST_BUILD_CHECKED" value="PS-139.425" />
+    <outdatedPlugins>
+      <item value="com.jetbrains.plugins.jade" />
+      <item value="NodeJS" />
+    </outdatedPlugins>
     <option name="UPDATE_CHANNEL_TYPE" value="eap" />
   </component>
 </application>

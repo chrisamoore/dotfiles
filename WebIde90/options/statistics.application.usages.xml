@@ -1,274 +1,69 @@
 <application>
   <component name="StatisticsApplicationUsages">
-    <group name="Command line tool">
-      <project id="wwwValuationVision" values="console in toolwindow" collectionTime="0" />
-    </group>
-    <group name="vcs">
-      <project id="multitenant-loopback" values="Git" collectionTime="0" />
-      <project id="generator-jagged" values="Git" collectionTime="0" />
-      <project id="sandbox" values="Git" collectionTime="0" />
-      <project id="lambo:standalone" values="Git" collectionTime="0" />
-      <project id="Stampede" values="Git" collectionTime="0" />
-      <project id="spendy" values="Git" collectionTime="0" />
-      <project id="game" values="Git" collectionTime="0" />
-      <project id="kme" values="Git" collectionTime="0" />
-      <project id="frontline" values="Git" collectionTime="0" />
-      <project id="ephbee" values="Git" collectionTime="0" />
-      <project id="spendy-api-loopback" values="Git" collectionTime="0" />
-      <project id="facebook_object" values="Git" collectionTime="0" />
-      <project id="Kareer-Discover" values="Git" collectionTime="0" />
-    </group>
-    <group name="javaScript Frameworks">
-      <project id="spendy-api-loopback" values="node_modules" collectionTime="0" />
-      <project id="multitenant-loopback" values="node_modules" collectionTime="0" />
-      <project id="spendy" values="node_modules" collectionTime="0" />
-    </group>
-    <group name="jdbc-driver">
-      <project id="frontline" values="com.mysql.jdbc.Driver" collectionTime="0" />
-    </group>
-    <group name="php-interpreters">
-      <project id="demophpstorm" values="0" collectionTime="0" />
-      <project id="facebook_object" values="0" collectionTime="0" />
-      <project id="kme" values="0" collectionTime="0" />
-      <project id="lambo:standalone" values="0" collectionTime="0" />
-      <project id="l4" values="0" collectionTime="0" />
-      <project id="spendy" values="0" collectionTime="0" />
-      <project id="ephbee" values="0" collectionTime="0" />
-      <project id="kareerblog" values="0" collectionTime="0" />
-      <project id="generator-jagged" values="0" collectionTime="0" />
-      <project id="multitenant-loopback" values="0" collectionTime="0" />
-      <project id="Storm" values="0" collectionTime="0" />
-      <project id="frontline" values="0" collectionTime="0" />
-      <project id="sandbox" values="0" collectionTime="0" />
-      <project id="lead-box" values="0" collectionTime="0" />
-      <project id="Stampede" values="0" collectionTime="0" />
-      <project id="wwwValuationVision" values="0" collectionTime="0" />
-      <project id="app" values="0" collectionTime="0" />
-      <project id="Kareer-Discover" values="0" collectionTime="0" />
-      <project id="game" values="0" collectionTime="0" />
-      <project id="spendy-api-loopback" values="0" collectionTime="0" />
-      <project id="symfony" values="0" collectionTime="0" />
-    </group>
-    <group name="file-type">
-      <project id="demophpstorm" values="UNKNOWN,PLAIN_TEXT,XML,PHP" collectionTime="0" />
-      <project id="facebook_object" values="Images,Ini,UNKNOWN,TypeScript,Native,JSON,PHP,YAML,Puppet,XML,PLAIN_TEXT" collectionTime="0" />
-      <project id="kme" values="PLAIN_TEXT,PHP,Puppet,JSON,YAML,htaccess,JavaScript,CSS,UNKNOWN,XML,SmartyConfig,Ini,Images,Markdown" collectionTime="0" />
-      <project id="lambo:standalone" values="YAML,LESS,TypeScript,ARCHIVE,CSS,UNKNOWN,Markdown,Smarty,htaccess,JavaScript,PHP,Images,Ini,Native,XML,HTML,JSON,PLAIN_TEXT" collectionTime="0" />
-      <project id="l4" values="htaccess,YAML,JavaScript,ARCHIVE,HTML,TypeScript,Blade,XML,PHP,Ini,CSS,Markdown,JSON,UNKNOWN,Images,Native,Cucumber,PLAIN_TEXT" collectionTime="0" />
-      <project id="spendy" values="JSHint,PLAIN_TEXT,Images,UNKNOWN,TypeScript,YAML,CSS,C++,Puppet,JavaScript,Bash,JSON,XML,SourceMap,HTML,JSCS,C#,Markdown" collectionTime="0" />
-      <project id="ephbee" values="YAML,TypeScript,Native,Markdown,XML,Images,PLAIN_TEXT,Puppet,CSS,JSON,HTML,Twig,C++,PHAR,Ini,SmartyConfig,PHP,JavaScript,UNKNOWN" collectionTime="0" />
-      <project id="kareerblog" values="PLAIN_TEXT,Smarty,JSON,PHAR,PHP,Images,TypeScript,CSS,JavaScript,YAML,C++,SQL,htaccess,ReST,ARCHIVE,Twig,Ini,UNKNOWN,XML,HTML" collectionTime="0" />
-      <project id="generator-jagged" values="C++,SmartyConfig,HTML,JavaScript,JSON,PATCH,XML,UNKNOWN,LESS,Native,YAML,CSS,ARCHIVE,JSHint,PLAIN_TEXT,Images" collectionTime="0" />
-      <project id="multitenant-loopback" values="XML,JavaScript,JSHint,UNKNOWN,JSON,PLAIN_TEXT,Markdown" collectionTime="0" />
-      <project id="Storm" values="PHAR,JavaScript,PLAIN_TEXT,XML,SQL,Native,UNKNOWN,Smarty,PHP,JSON,C++,Images,TypeScript,DTD,Twig,YAML,HTML,Ini,CSS,ReST" collectionTime="0" />
-      <project id="frontline" values="SourceMap,Cucumber,Blade,PLAIN_TEXT,Markdown,JSON,PHP,YAML,Puppet,LESS,Bash,TypeScript,DATASOURCE_STORAGE,XML,Images,ARCHIVE,CSS,HTML,UNKNOWN,JavaScript,SmartyConfig,Ini,Native" collectionTime="0" />
-      <project id="sandbox" values="Images,PLAIN_TEXT,CSS,Puppet,ARCHIVE,htaccess,Ini,UNKNOWN,SmartyConfig,PHP,Markdown,TypeScript,XML,JSON,HTML,YAML,JavaScript,Smarty" collectionTime="0" />
-      <project id="lead-box" values="PATCH,DTD,XML,Bash,Jade,ESLint,JSHint,UNKNOWN,Markdown,JSCS,YAML,Ini,TypeScript,CSS,JSON,C++,ARCHIVE,Images,Native,PHP,HTML,SourceMap,JavaScript,PLAIN_TEXT,LESS,SmartyConfig" collectionTime="0" />
-      <project id="Stampede" values="Ini,Twig,ARCHIVE,PHAR,Markdown,JavaScript,Puppet,HTML,UNKNOWN,PLAIN_TEXT,CSS,XML,JSON,C++,Images,YAML,PHP,htaccess,SmartyConfig" collectionTime="0" />
-      <project id="wwwValuationVision" values="SQL,PHP,PHAR,ReST,XML,CSS,HTML,UNKNOWN,ARCHIVE,Native,PLAIN_TEXT,YAML,JSON,Images,Ini,JSHint,LESS,htaccess,Smarty,JavaScript" collectionTime="0" />
-      <project id="app" values="Native,ARCHIVE,htaccess,Ini,PHP,XML,UNKNOWN,Puppet,TypeScript,HTML,Images,Cucumber,JSON,JavaScript,YAML,Markdown,PLAIN_TEXT,SmartyConfig,CSS" collectionTime="0" />
-      <project id="Kareer-Discover" values="htaccess,PLAIN_TEXT,JSON,ActionScript,Native,CSS,UNKNOWN,Images,Smarty,ARCHIVE,XML,JSHint,JavaScript,PHP,LESS,SQL,HTML,SmartyConfig,YAML" collectionTime="0" />
-      <project id="game" values="PHP,Images,PLAIN_TEXT,JSON,XML,UNKNOWN" collectionTime="0" />
-      <project id="spendy-api-loopback" values="HTML,YAML,LESS,JSCS,Markdown,XML,JavaScript,PHP,PLAIN_TEXT,JSON,CSS,UNKNOWN,Bash,Images,JSHint,Native" collectionTime="0" />
-      <project id="symfony" values="XML,UNKNOWN" collectionTime="0" />
-    </group>
-    <group name="php-interpreter-version">
-      <project id="demophpstorm" values="not installed" collectionTime="0" />
-      <project id="facebook_object" values="not installed" collectionTime="0" />
-      <project id="kme" values="not installed" collectionTime="0" />
-      <project id="lambo:standalone" values="not installed" collectionTime="0" />
-      <project id="l4" values="not installed" collectionTime="0" />
-      <project id="spendy" values="not installed" collectionTime="0" />
-      <project id="ephbee" values="not installed" collectionTime="0" />
-      <project id="kareerblog" values="not installed" collectionTime="0" />
-      <project id="generator-jagged" values="not installed" collectionTime="0" />
-      <project id="multitenant-loopback" values="not installed" collectionTime="0" />
-      <project id="Storm" values="not installed" collectionTime="0" />
-      <project id="frontline" values="not installed" collectionTime="0" />
-      <project id="sandbox" values="not installed" collectionTime="0" />
-      <project id="lead-box" values="not installed" collectionTime="0" />
-      <project id="Stampede" values="not installed" collectionTime="0" />
-      <project id="wwwValuationVision" values="not installed" collectionTime="0" />
-      <project id="app" values="not installed" collectionTime="0" />
-      <project id="Kareer-Discover" values="not installed" collectionTime="0" />
-      <project id="game" values="not installed" collectionTime="0" />
-      <project id="spendy-api-loopback" values="not installed" collectionTime="0" />
-      <project id="symfony" values="not installed" collectionTime="0" />
-    </group>
-    <group name="deployment server">
-      <project id="demophpstorm" values="SFTP" collectionTime="0" />
-      <project id="facebook_object" values="SFTP" collectionTime="0" />
-      <project id="lambo:standalone" values="SFTP" collectionTime="0" />
-      <project id="l4" values="SFTP" collectionTime="0" />
-      <project id="ephbee" values="SFTP" collectionTime="0" />
-      <project id="generator-jagged" values="SFTP" collectionTime="0" />
-      <project id="multitenant-loopback" values="SFTP" collectionTime="0" />
-      <project id="app" values="SFTP" collectionTime="0" />
-      <project id="frontline" values="SFTP" collectionTime="0" />
-      <project id="sandbox" values="SFTP" collectionTime="0" />
-      <project id="lead-box" values="SFTP" collectionTime="0" />
-      <project id="Stampede" values="SFTP" collectionTime="0" />
-      <project id="spendy" values="SFTP" collectionTime="0" />
-      <project id="kme" values="SFTP" collectionTime="0" />
-      <project id="spendy-api-loopback" values="SFTP" collectionTime="0" />
+    <group name="JavaScript versions">
+      <project id="phpapp" values="DEFAULT" collectionTime="1430114836689" />
+      <project id="frontline" values="DEFAULT" collectionTime="1432011455932" />
+      <project id="slcTalk" values="DEFAULT" collectionTime="1429925754534" />
     </group>
     <group name="module type">
-      <project id="demophpstorm" values="WEB_MODULE" collectionTime="0" />
-      <project id="facebook_object" values="WEB_MODULE" collectionTime="0" />
-      <project id="kme" values="WEB_MODULE" collectionTime="0" />
-      <project id="lambo:standalone" values="WEB_MODULE" collectionTime="0" />
-      <project id="l4" values="WEB_MODULE" collectionTime="0" />
-      <project id="spendy" values="WEB_MODULE" collectionTime="0" />
-      <project id="ephbee" values="WEB_MODULE" collectionTime="0" />
-      <project id="kareerblog" values="WEB_MODULE" collectionTime="0" />
-      <project id="generator-jagged" values="WEB_MODULE" collectionTime="0" />
-      <project id="multitenant-loopback" values="WEB_MODULE" collectionTime="0" />
-      <project id="Storm" values="WEB_MODULE" collectionTime="0" />
-      <project id="frontline" values="WEB_MODULE" collectionTime="0" />
-      <project id="sandbox" values="WEB_MODULE" collectionTime="0" />
-      <project id="lead-box" values="WEB_MODULE" collectionTime="0" />
-      <project id="Stampede" values="WEB_MODULE" collectionTime="0" />
-      <project id="wwwValuationVision" values="WEB_MODULE" collectionTime="0" />
-      <project id="app" values="WEB_MODULE" collectionTime="0" />
-      <project id="Kareer-Discover" values="WEB_MODULE" collectionTime="0" />
-      <project id="game" values="WEB_MODULE" collectionTime="0" />
-      <project id="spendy-api-loopback" values="WEB_MODULE" collectionTime="0" />
-      <project id="symfony" values="WEB_MODULE" collectionTime="0" />
+      <project id="phpapp" values="WEB_MODULE" collectionTime="1430114836596" />
+      <project id="frontline" values="WEB_MODULE" collectionTime="1432011455766" />
+      <project id="slcTalk" values="WEB_MODULE" collectionTime="1429925754400" />
     </group>
-    <group name="JavaScript versions">
-      <project id="demophpstorm" values="DEFAULT" collectionTime="0" />
-      <project id="facebook_object" values="DEFAULT" collectionTime="0" />
-      <project id="kme" values="DEFAULT" collectionTime="0" />
-      <project id="lambo:standalone" values="DEFAULT" collectionTime="0" />
-      <project id="l4" values="DEFAULT" collectionTime="0" />
-      <project id="spendy" values="DEFAULT" collectionTime="0" />
-      <project id="ephbee" values="DEFAULT" collectionTime="0" />
-      <project id="kareerblog" values="DEFAULT" collectionTime="0" />
-      <project id="generator-jagged" values="DEFAULT" collectionTime="0" />
-      <project id="multitenant-loopback" values="DEFAULT" collectionTime="0" />
-      <project id="Storm" values="DEFAULT" collectionTime="0" />
-      <project id="frontline" values="DEFAULT" collectionTime="0" />
-      <project id="sandbox" values="DEFAULT" collectionTime="0" />
-      <project id="lead-box" values="DEFAULT" collectionTime="0" />
-      <project id="Stampede" values="DEFAULT" collectionTime="0" />
-      <project id="wwwValuationVision" values="DEFAULT" collectionTime="0" />
-      <project id="app" values="DEFAULT" collectionTime="0" />
-      <project id="Kareer-Discover" values="DEFAULT" collectionTime="0" />
-      <project id="game" values="DEFAULT" collectionTime="0" />
-      <project id="spendy-api-loopback" values="DEFAULT" collectionTime="0" />
-      <project id="symfony" values="DEFAULT" collectionTime="0" />
+    <group name="vcs">
+      <project id="phpapp" values="Git" collectionTime="1430114836595" />
+      <project id="frontline" values="Git" collectionTime="1432011455765" />
     </group>
-    <group name="javaScript Scope Usages">
-      <project id="demophpstorm" values="Project,Project" collectionTime="0" />
-      <project id="facebook_object" values="Project,Project" collectionTime="0" />
-      <project id="kme" values="Project,Project" collectionTime="0" />
-      <project id="lambo:standalone" values="Project,Project" collectionTime="0" />
-      <project id="l4" values="Project,Project" collectionTime="0" />
-      <project id="spendy" values="Project,Directory,Project" collectionTime="0" />
-      <project id="ephbee" values="Project,Project" collectionTime="0" />
-      <project id="kareerblog" values="Project,Project" collectionTime="0" />
-      <project id="generator-jagged" values="Project,Project" collectionTime="0" />
-      <project id="multitenant-loopback" values="Directory,Project,Project" collectionTime="0" />
-      <project id="Storm" values="Project,Project" collectionTime="0" />
-      <project id="frontline" values="Project,Project" collectionTime="0" />
-      <project id="sandbox" values="Project,Project" collectionTime="0" />
-      <project id="lead-box" values="Project,Project" collectionTime="0" />
-      <project id="Stampede" values="Project,Project" collectionTime="0" />
-      <project id="wwwValuationVision" values="Project,Project" collectionTime="0" />
-      <project id="app" values="Project,Project" collectionTime="0" />
-      <project id="Kareer-Discover" values="Project,Project" collectionTime="0" />
-      <project id="game" values="Project,Project" collectionTime="0" />
-      <project id="spendy-api-loopback" values="Project,Directory,Project" collectionTime="0" />
-      <project id="symfony" values="Project,Project" collectionTime="0" />
+    <group name="php-interpreters">
+      <project id="phpapp" values="0" collectionTime="1430114836693" />
+      <project id="frontline" values="0" collectionTime="1432011455940" />
+      <project id="slcTalk" values="0" collectionTime="1429925754543" />
     </group>
-    <group name="php-debug-skipped-paths">
-      <project id="demophpstorm" values="0" collectionTime="0" />
-      <project id="facebook_object" values="0" collectionTime="0" />
-      <project id="kme" values="0" collectionTime="0" />
-      <project id="lambo:standalone" values="0" collectionTime="0" />
-      <project id="l4" values="0" collectionTime="0" />
-      <project id="spendy" values="0" collectionTime="0" />
-      <project id="ephbee" values="0" collectionTime="0" />
-      <project id="kareerblog" values="0" collectionTime="0" />
-      <project id="generator-jagged" values="0" collectionTime="0" />
-      <project id="multitenant-loopback" values="0" collectionTime="0" />
-      <project id="Storm" values="0" collectionTime="0" />
-      <project id="frontline" values="0" collectionTime="0" />
-      <project id="sandbox" values="0" collectionTime="0" />
-      <project id="lead-box" values="0" collectionTime="0" />
-      <project id="Stampede" values="0" collectionTime="0" />
-      <project id="wwwValuationVision" values="0" collectionTime="0" />
-      <project id="app" values="0" collectionTime="0" />
-      <project id="Kareer-Discover" values="0" collectionTime="0" />
-      <project id="game" values="0" collectionTime="0" />
-      <project id="spendy-api-loopback" values="0" collectionTime="0" />
-      <project id="symfony" values="0" collectionTime="0" />
+    <group name="file-type">
+      <project id="phpapp" values="XML,JSON,htaccess,TypeScript,Locale,Markdown,Bash,ReST,Ini,Images,C++,PLAIN_TEXT,CSS,JavaScript,PHP,UNKNOWN,YAML" collectionTime="1430114836609" />
+      <project id="frontline" values="Blade,Cucumber,Bash,SourceMap,YAML,Less,Images,JSCS,HTML,XML,PHP,Markdown,CSS,JSON,UNKNOWN,DATASOURCE_STORAGE,JSHint,PLAIN_TEXT,ReST,Native,SmartyConfig,Ini,Locale,SQL,TypeScript,JavaScript,ARCHIVE" collectionTime="1432011455772" />
+      <project id="slcTalk" values="Ini,Bash,JSON,JavaScript,C++,YAML,XML,htaccess,Locale,Images,Markdown,PLAIN_TEXT,TypeScript,UNKNOWN,ReST,CSS,PHP" collectionTime="1429925754404" />
     </group>
-    <group name="php-servers">
-      <project id="demophpstorm" values="0" collectionTime="0" />
-      <project id="facebook_object" values="0" collectionTime="0" />
-      <project id="kme" values="1" collectionTime="0" />
-      <project id="lambo:standalone" values="0" collectionTime="0" />
-      <project id="l4" values="0" collectionTime="0" />
-      <project id="spendy" values="0" collectionTime="0" />
-      <project id="ephbee" values="0" collectionTime="0" />
-      <project id="kareerblog" values="0" collectionTime="0" />
-      <project id="generator-jagged" values="0" collectionTime="0" />
-      <project id="multitenant-loopback" values="0" collectionTime="0" />
-      <project id="Storm" values="0" collectionTime="0" />
-      <project id="frontline" values="0" collectionTime="0" />
-      <project id="sandbox" values="0" collectionTime="0" />
-      <project id="lead-box" values="0" collectionTime="0" />
-      <project id="Stampede" values="1" collectionTime="0" />
-      <project id="wwwValuationVision" values="0" collectionTime="0" />
-      <project id="app" values="0" collectionTime="0" />
-      <project id="Kareer-Discover" values="0" collectionTime="0" />
-      <project id="game" values="0" collectionTime="0" />
-      <project id="spendy-api-loopback" values="0" collectionTime="0" />
-      <project id="symfony" values="0" collectionTime="0" />
+    <group name="php-interpreter-version">
+      <project id="phpapp" values="not installed" collectionTime="1430114836692" />
+      <project id="frontline" values="not installed" collectionTime="1432011455939" />
+      <project id="slcTalk" values="not installed" collectionTime="1429925754541" />
+    </group>
+    <group name="jdbc-driver">
+      <project id="frontline" values="com.mysql.jdbc.Driver" collectionTime="1432011455930" />
     </group>
     <group name="php-include-path">
-      <project id="demophpstorm" values="0" collectionTime="0" />
-      <project id="facebook_object" values="0" collectionTime="0" />
-      <project id="kme" values="0" collectionTime="0" />
-      <project id="lambo:standalone" values="0" collectionTime="0" />
-      <project id="l4" values="0" collectionTime="0" />
-      <project id="spendy" values="0" collectionTime="0" />
-      <project id="ephbee" values="0" collectionTime="0" />
-      <project id="kareerblog" values="0" collectionTime="0" />
-      <project id="generator-jagged" values="0" collectionTime="0" />
-      <project id="multitenant-loopback" values="0" collectionTime="0" />
-      <project id="Storm" values="0" collectionTime="0" />
-      <project id="frontline" values="78" collectionTime="0" />
-      <project id="sandbox" values="0" collectionTime="0" />
-      <project id="lead-box" values="0" collectionTime="0" />
-      <project id="Stampede" values="100" collectionTime="0" />
-      <project id="wwwValuationVision" values="0" collectionTime="0" />
-      <project id="app" values="0" collectionTime="0" />
-      <project id="Kareer-Discover" values="0" collectionTime="0" />
-      <project id="game" values="2" collectionTime="0" />
-      <project id="spendy-api-loopback" values="0" collectionTime="0" />
-      <project id="symfony" values="0" collectionTime="0" />
+      <project id="phpapp" values="0" collectionTime="1430114836689" />
+      <project id="frontline" values="75" collectionTime="1432011455934" />
+      <project id="slcTalk" values="0" collectionTime="1429925754536" />
     </group>
-    <group name="php-server-debug-ext">
-      <project id="kme" values="xdebug" collectionTime="0" />
-      <project id="Stampede" values="xdebug" collectionTime="0" />
+    <group name="javaScript Scope Usages">
+      <project id="phpapp" values="Project,Project" collectionTime="1430114836688" />
+      <project id="frontline" values="Project,Project" collectionTime="1432011455932" />
+      <project id="slcTalk" values="Project,Project" collectionTime="1429925754534" />
+    </group>
+    <group name="php-debug-skipped-paths">
+      <project id="phpapp" values="0" collectionTime="1430114836694" />
+      <project id="frontline" values="0" collectionTime="1432011455942" />
+      <project id="slcTalk" values="0" collectionTime="1429925754545" />
+    </group>
+    <group name="php-servers">
+      <project id="phpapp" values="0" collectionTime="1430114836692" />
+      <project id="frontline" values="0" collectionTime="1432011455939" />
+      <project id="slcTalk" values="0" collectionTime="1429925754541" />
     </group>
   </component>
   <component name="UsageTrigger">
     <counts>
-      <entry feature="CreateFile.CreateFileAction" count="56" />
-      <entry feature="NewDirectoryProjectAction.Composer project" count="1" />
-      <entry feature="NewDirectoryProjectAction.empty" count="2" />
-      <entry feature="execute.JavascriptDebugType.Debug" count="2" />
-      <entry feature="execute.PhpLocalRunConfigurationType.Debug" count="1" />
-      <entry feature="ide.settings.File_Types" count="1" />
+      <entry feature="CreateFile.CreateFileAction" count="6" />
+      <entry feature="ide.settings.Appearance" count="3" />
+      <entry feature="ide.settings.Blade" count="2" />
+      <entry feature="ide.settings.Colors_&amp;_Fonts" count="6" />
+      <entry feature="ide.settings.General" count="2" />
       <entry feature="ide.settings.Keymap" count="4" />
-      <entry feature="ide.settings.Language_Defaults" count="1" />
-      <entry feature="ide.settings.TextMate_Bundles" count="2" />
-      <entry feature="ide.settings.Version_Control" count="2" />
-      <entry feature="ideaapp.started" count="46" />
-      <entry feature="uml.ShowDiagram.DIFF.popup" count="1" />
+      <entry feature="ideaapp.started" count="3" />
+      <entry feature="welcome.screen.WelcomeScreen.CreateWebProject" count="1" />
+      <entry feature="welcome.screen.WelcomeScreen.OpenDirectoryProject" count="1" />
     </counts>
   </component>
 </application>

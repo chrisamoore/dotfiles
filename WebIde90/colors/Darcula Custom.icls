@@ -1,4 +1,4 @@
-<scheme name="Darcula Custom" version="124" parent_scheme="Default">
+<scheme name="Darcula Custom" version="141" parent_scheme="Default">
   <option name="LINE_SPACING" value="1.0" />
   <option name="EDITOR_FONT_SIZE" value="13" />
   <option name="EDITOR_FONT_NAME" value="Droid Sans Mono" />
@@ -108,67 +108,6 @@
     <option name="CONSOLE_SYSTEM_OUTPUT">
       <value>
         <option name="FOREGROUND" value="bbbbbb" />
-      </value>
-    </option>
-    <option name="CSS.COLOR">
-      <value>
-        <option name="FOREGROUND" value="6897bb" />
-      </value>
-    </option>
-    <option name="CSS.COMMENT">
-      <value>
-        <option name="FOREGROUND" value="808080" />
-      </value>
-    </option>
-    <option name="CSS.FUNCTION">
-      <value>
-        <option name="FOREGROUND" value="ffc66d" />
-      </value>
-    </option>
-    <option name="CSS.IDENT">
-      <value>
-        <option name="FOREGROUND" value="ffc66d" />
-      </value>
-    </option>
-    <option name="CSS.IMPORTANT">
-      <value>
-        <option name="FOREGROUND" value="cc7832" />
-        <option name="FONT_TYPE" value="1" />
-      </value>
-    </option>
-    <option name="CSS.KEYWORD">
-      <value>
-        <option name="FOREGROUND" value="cc7832" />
-      </value>
-    </option>
-    <option name="CSS.NUMBER">
-      <value>
-        <option name="FOREGROUND" value="6897bb" />
-      </value>
-    </option>
-    <option name="CSS.PROPERTY_NAME">
-      <value>
-        <option name="FOREGROUND" value="9876aa" />
-      </value>
-    </option>
-    <option name="CSS.PROPERTY_VALUE">
-      <value>
-        <option name="FOREGROUND" value="a9b7c6" />
-      </value>
-    </option>
-    <option name="CSS.STRING">
-      <value>
-        <option name="FOREGROUND" value="a5c261" />
-      </value>
-    </option>
-    <option name="CSS.TAG_NAME">
-      <value>
-        <option name="FOREGROUND" value="cc7832" />
-      </value>
-    </option>
-    <option name="CSS.URL">
-      <value>
-        <option name="FOREGROUND" value="287bde" />
       </value>
     </option>
     <option name="CTRL_CLICKABLE">
@@ -718,11 +657,6 @@
         <option name="EFFECT_TYPE" value="2" />
       </value>
     </option>
-    <option name="REST.BOLD">
-      <value>
-        <option name="FONT_TYPE" value="1" />
-      </value>
-    </option>
     <option name="REST.FIXED">
       <value>
         <option name="BACKGROUND" value="a3a08" />
@@ -736,11 +670,6 @@
     <option name="REST.INTERPRETED">
       <value>
         <option name="BACKGROUND" value="15463c" />
-      </value>
-    </option>
-    <option name="REST.ITALIC">
-      <value>
-        <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="RHTML_COMMENT_ID">

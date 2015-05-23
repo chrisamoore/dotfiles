@@ -1,4 +1,4 @@
-<scheme name="CAM" version="124" parent_scheme="Default">
+<scheme name="CAM" version="141" parent_scheme="Default">
   <option name="LINE_SPACING" value="1.0" />
   <option name="EDITOR_FONT_SIZE" value="12" />
   <option name="CONSOLE_FONT_NAME" value="Menlo" />
@@ -38,6 +38,12 @@
       <value>
         <option name="FOREGROUND" value="ae5326" />
         <option name="BACKGROUND" value="153966" />
+      </value>
+    </option>
+    <option name="BLADE_DIRECTIVE">
+      <value>
+        <option name="FOREGROUND" value="75802b" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="BREAKPOINT_ATTRIBUTES">
@@ -514,7 +520,7 @@
     <option name="ERRORS_ATTRIBUTES">
       <value>
         <option name="EFFECT_COLOR" value="ff6767" />
-        <option name="ERROR_STRIPE_COLOR" value="ff0000" />
+        <option name="ERROR_STRIPE_COLOR" value="cf5b56" />
         <option name="EFFECT_TYPE" value="2" />
       </value>
     </option>
@@ -655,9 +661,6 @@
         <option name="FOREGROUND" value="606060" />
       </value>
     </option>
-    <option name="HAML_TEXT">
-      <value />
-    </option>
     <option name="HTML_ATTRIBUTE_NAME">
       <value>
         <option name="FOREGROUND" value="474747" />
@@ -740,9 +743,6 @@
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
-    <option name="JAVA_COMMA">
-      <value />
-    </option>
     <option name="JAVA_DOC_COMMENT">
       <value>
         <option name="FOREGROUND" value="10493d" />
@@ -788,16 +788,10 @@
         <option name="FOREGROUND" value="bc7a01" />
       </value>
     </option>
-    <option name="JAVA_SEMICOLON">
-      <value />
-    </option>
     <option name="JAVA_STRING">
       <value>
         <option name="FOREGROUND" value="416477" />
       </value>
-    </option>
-    <option name="JAVA_VALID_STRING_ESCAPE">
-      <value />
     </option>
     <option name="JS.ATTRIBUTE">
       <value>
@@ -815,9 +809,6 @@
         <option name="FOREGROUND" value="10493d" />
         <option name="FONT_TYPE" value="2" />
       </value>
-    </option>
-    <option name="JS.COMMA">
-      <value />
     </option>
     <option name="JS.DOC_COMMENT">
       <value>
@@ -893,9 +884,6 @@
       <value>
         <option name="FOREGROUND" value="416477" />
       </value>
-    </option>
-    <option name="JS.SEMICOLON">
-      <value />
     </option>
     <option name="JS.STATIC_MEMBER_VARIABLE">
       <value>
@@ -1075,9 +1063,6 @@
       <value>
         <option name="FOREGROUND" value="ffffff" />
       </value>
-    </option>
-    <option name="PHP_COMMA">
-      <value />
     </option>
     <option name="PHP_COMMENT">
       <value>
@@ -1307,12 +1292,6 @@
         <option name="BACKGROUND" value="153966" />
       </value>
     </option>
-    <option name="REGEXP.BRACES">
-      <value />
-    </option>
-    <option name="REGEXP.BRACKETS">
-      <value />
-    </option>
     <option name="REGEXP.CHAR_CLASS">
       <value />
     </option>
@@ -1336,19 +1315,11 @@
         <option name="FOREGROUND" value="927c5d" />
       </value>
     </option>
-    <option name="REGEXP.PARENTHS">
-      <value />
-    </option>
     <option name="REGEXP.QUOTE_CHARACTER">
       <value />
     </option>
     <option name="REGEXP.REDUNDANT_ESCAPE">
       <value />
-    </option>
-    <option name="REST.BOLD">
-      <value>
-        <option name="FONT_TYPE" value="1" />
-      </value>
     </option>
     <option name="REST.EXPLICIT">
       <value>
@@ -1373,11 +1344,6 @@
     <option name="REST.INTERPRETED">
       <value>
         <option name="BACKGROUND" value="4d5d3d" />
-      </value>
-    </option>
-    <option name="REST.ITALIC">
-      <value>
-        <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="REST.LINE_COMMENT">
@@ -1843,7 +1809,7 @@
     <option name="WARNING_ATTRIBUTES">
       <value>
         <option name="EFFECT_COLOR" value="959595" />
-        <option name="ERROR_STRIPE_COLOR" value="ffff00" />
+        <option name="ERROR_STRIPE_COLOR" value="ebc700" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>

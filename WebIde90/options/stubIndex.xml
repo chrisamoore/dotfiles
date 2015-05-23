@@ -37,6 +37,10 @@
         <option value="sql.table.shortName" />
         <option value="dom.elementClass" />
         <option value="dom.namespaceKey" />
+        <option value="Scss.mixin" />
+        <option value="Scss.function" />
+        <option value="Scss.placeholder.selector" />
+        <option value="Scss.variable" />
         <option value="jade.mixin" />
         <option value="puppet.text.search.index" />
         <option value="puppet.resource" />

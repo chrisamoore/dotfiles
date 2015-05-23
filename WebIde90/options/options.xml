@@ -1,63 +1,28 @@
 <application>
   <component name="PropertiesComponent">
-    <property name="AngularJSConfig.addWhitespaceBetweenBraces" value="true" />
-    <property name="Copy.OpenInEditor" value="true" />
-    <property name="COMPOSER_PACKAGE_FILTER" value="aura/sql&#10;cartalyst/sentry" />
-    <property name="DefaultHtmlDoctype.MigrateToHtml5" value="true" />
-    <property name="toolwindow.stripes.buttons.info.shown" value="true" />
-    <property name="CommitChangeListDialog.SPLITTER_PROPORTION_2" value="0.5" />
-    <property name="FileTemplates.CurrentTab" value="Code" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="SingleInspectionProfilePanel.HORIZONTAL_DIVIDER_PROPORTION" value="0.5" />
-    <property name="file.colors.enable.non.project" value="494539" />
-    <property name="cc.takacs.php_codeverage_display.enabled" value="true" />
-    <property name="RunConfigurable.dividerProportion" value="0.3" />
-    <property name="PhpStorm.initialConfigurationShown" value="true" />
-    <property name="PLUGIN_FILTER" value="node&#10;gher&#10;blade&#10;bla&#10;html" />
-    <property name="SingleInspectionProfilePanel.VERTICAL_DIVIDER_PROPORTION" value="0.5" />
-    <property name="CommitChangeListDialog.DETAILS_SHOW_OPTION_" value="true" />
-    <property name="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$1.splitter" value="0.3" />
-    <property name="CommitChangeListDialog.DETAILS_SPLITTER_PROPORTION_2" value="0.41705284" />
-    <property name="ChangesViewManager.DETAILS_SPLITTER_PROPORTION" value="0.5" />
-    <property name="MemberChooser.showClasses" value="true" />
-    <property name="ExpandBeforeRunStepsPanel" value="true" />
-    <property name="FileTemplates.SelectedTemplate" value="PHP Setter Method" />
-    <property name="Non-Project Files" value="Yellow" />
-    <property name="PhpStorm.InitialConfiguration" value="true" />
-    <property name="installation.uid" value="05ebaa63-aaf0-4926-9a72-7e890a8525be" />
-    <property name="export.settings.path" value="$USER_HOME$/Library/Preferences/WebIde60/settings.jar" />
-    <property name="com.intellij.diagnostic.IdeErrorsDialogactiveTab" value="1" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="DeploymentNotificationsComponent.WarnDisplayed.Java7&amp;Windows7FTPIssue" value="false" />
-    <property name="LayoutCode.processChangedText" value="false" />
-    <property name="file.chooser.recent.files" value="$USER_HOME$/Library/Application Support/TextMate/Bundles/Blade.tmbundle&#10;/Users/chris/Library/Application Support/TextMate/Bundles/Blade.tmbundle/Syntaxes&#10;/Users/chris/Desktop/Blade.tmbundle&#10;/Users/chris/Documents/Laravel Blade.tmbundle&#10;/Users/chris/Sites/kareer-new&#10;/Users/chris/Sites/kareer-new/kme&#10;/Users/chris/Desktop/Cam_og.tmTheme&#10;/Users/chris/Library/Application Support/_Sublime Text 3/Cache/Color Scheme - Default&#10;/Users/chris/Library/Preferences/WebIde60/OG_settings.jar&#10;/Users/chris/Downloads/settings.jar&#10;/Users/chris" />
-    <property name="AngularJSConfig.braceEnabled" value="true" />
-    <property name="LayoutCode.rearrangeEntries" value="false" />
-    <property name="LayoutCode.optimizeImports" value="false" />
-    <property name="INSPECTION_FILTER_HISTORY" value="line number&#10;line numbers&#10;&quot;New in 13&quot;" />
-    <property name="FindSplitterProportion" value="0.25" />
-    <property name="ColorChooser.RecentColors" value="139-132-59-255,,,147-180-181-255,,,154-72-25-255,,,33-204-20-255,,,123-34-39-255,,,194-50-55-255,,,255-249-101-255,,,92-92-92-255,,,103-119-0-255,,,0-119-117-255,,,119-137-149-255,,,163-255-164-255,,,241-255-244-255,,,255-158-149-255,,,130-197-255-255,,,25-31-30-255,,,149-137-0-255,,,41-87-116-255,,,14-25-35-255,,,0-0-0-255" />
     <property name="log.debug.categories" value="" />
-    <property name="DASH_PLUGIN_KEYWORDS" value="ActionScript=actionscript;C++=cpp;CoffeeScript=coffee;Perl=perl;CSS=css;Erlang=erlang;Haskell=haskell;HTML=html;JAVA=java7;CLASS=java7;JavaScript=javascript;LESS=less;PHP=php;SASS=sass;Ruby=ruby" />
-    <property name="evlsprt3.7" value="13" />
-    <property name="PhpStorm.multiCaretsEnabled" value="true" />
-    <property name="evlsprt3.PS-138.256" value="16" />
+    <property name="evlsprt3.PS-141.792" value="18" />
+    <property name="DefaultHtmlDoctype.MigrateToHtml5" value="true" />
     <property name="DefaultHtmlDoctype.Refreshed" value="1" />
-    <property name="KEYMAP" value="select all" />
-    <property name="evlsprt3.PS-138.379" value="14" />
-    <property name="evlsprt.PS-138.379" value="146e1460180" />
-    <property name="evlsprt2.PS-138.379" value="1469d344586" />
-    <property name="com.intellij.openapi.editor.actions.MultiplePasteAction$1.splitter" value="0.3" />
-    <property name="evlsprt3.PS-138.826" value="10" />
-    <property name="evlsprt3.PS-138.940" value="10" />
-    <property name="SqlStructureView.SqlDdlStatement.file.structure.state" value="true" />
-    <property name="com.intellij.persistence.database.view.ui.AddColumnDialog.previewExpanded" value="true" />
-    <property name="evlsprt3.8" value="17" />
-    <property name="evlsprt.8" value="14a5f1ed4ed" />
-    <property name="evlsprt2.8" value="14a0793221c" />
-    <property name="javascript.grunt_toolwindow_splitter" value="0.2" />
-    <property name="bashsupport.weddingNotification.shown" value="1" />
+    <property name="PhpStorm.InitialConfiguration" value="true" />
+    <property name="installation.uid" value="30783a62-4acc-4cc4-b971-0799b9efc13a" />
+    <property name="PhpStorm.initialConfigurationShown" value="true" />
+    <property name="toolwindow.stripes.buttons.info.shown" value="true" />
+    <property name="DeploymentNotificationsComponent.WarnDisplayed.Java7&amp;Windows7FTPIssue" value="false" />
+    <property name="bashsupport.weddingNotification.shown" value="0" />
+    <property name="lastTip" value="3" />
+    <property name="file.colors.enable.non.project" value="494539" />
+    <property name="Non-Project Files" value="494539" />
+    <property name="ChangesViewManager.DETAILS_SPLITTER_PROPORTION" value="0.5" />
     <property name="bashsupport.weddingNotification.enabled" value="false" />
-    <property name="evlsprt3.PS-141.89" value="12" />
+    <property name="KEYMAP" value="line numbers" />
+    <property name="ColorChooser.RecentColors" value="117-128-43-255,,,13-4-15-255" />
+    <property name="SingleInspectionProfilePanel.VERTICAL_DIVIDER_PROPORTION" value="0.5" />
+    <property name="SingleInspectionProfilePanel.HORIZONTAL_DIVIDER_PROPORTION" value="0.5" />
+    <property name="FindSplitterProportion" value="0.25" />
+    <property name="Copy.OpenInEditor" value="true" />
+    <property name="evlsprt.PS-141.792" value="14d7a6be180" />
+    <property name="evlsprt2.PS-141.792" value="14d1db99072" />
+    <property name="MoveFile.OpenInEditor" value="true" />
   </component>
 </application>

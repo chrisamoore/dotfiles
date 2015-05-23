@@ -2,7 +2,7 @@
   <component name="LocalDatabaseDriverManager">
     <driver id="db2.base" name="DB2" dialect="DB2">
       <option name="auto-sync" value="false" />
-      <driver id="db2" name="DB2 LUW" dialect="DB2">
+      <driver id="db2" name="DB2 LUW">
         <property name="retrieveMessagesFromServerOnGetMessage" value="true" />
       </driver>
       <driver id="db2.jtopen" name="JTOpen (DB2 iSeries)" dialect="DB2" />
@@ -32,12 +32,6 @@
       <property name="characterEncoding" value="utf8" />
       <property name="characterSetResults" value="utf8" />
       <property name="yearIsDateType" value="false" />
-      <library>
-        <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/mysql-connector-license.txt</url>
-      </library>
-      <library>
-        <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/mysql-connector-java-5.1.31-bin.jar</url>
-      </library>
     </driver>
     <driver id="oracle" name="Oracle" dialect="Oracle">
       <option name="auto-sync" value="false" />

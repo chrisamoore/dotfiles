@@ -33,3 +33,9 @@ alias vsus="vagrant suspend"
 #############
 alias mt='multitail --config ~/.multitail -CS php'
 
+
+##############
+# Node /iojs #
+##############
+alias node='node --harmony_arrow_functions --es_staging'
+
