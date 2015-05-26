@@ -22,7 +22,7 @@ alias gst='git status'
 #list tags (brief)
 alias gdesc='git describe --tags'
 alias grv='git remote -v'
-
+alias brclean='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 
 #Git pull w/o commit
 alias no_commit='git pull --no-commit'

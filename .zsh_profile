@@ -32,6 +32,7 @@ alias vsus="vagrant suspend"
 # Multitail #
 #############
 alias mt='multitail --config ~/.multitail -CS php'
+alias kmongo='mongo admin --eval "db.shutdownServer()" > /dev/null'
 
 
 ##############

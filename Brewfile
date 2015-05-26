@@ -1,4 +1,4 @@
-# Install command-line tools using Homebrew
+I# Install command-line tools using Homebrew
 # Usage: `brew bundle Brewfile`
 
 # Make sure we’re using the latest Homebrew
