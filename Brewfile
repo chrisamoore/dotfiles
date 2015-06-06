@@ -33,6 +33,7 @@ install homebrew/php/php55 --with-gmp
 install ack
 #install exiv2
 install git
+install git-extras
 install imagemagick --with-webp
 install pv
 install rename
