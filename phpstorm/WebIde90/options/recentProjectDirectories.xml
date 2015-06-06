@@ -2,11 +2,18 @@
   <component name="RecentDirectoryProjectsManager">
     <option name="recentPaths">
       <list>
+        <option value="$USER_HOME$/Code/loopback-model-shutdown" />
         <option value="$USER_HOME$/Code/frontline-box" />
         <option value="$USER_HOME$/Code/slcTalk/phpapp" />
         <option value="$USER_HOME$/Code/slcTalk" />
       </list>
     </option>
+    <option name="openPaths">
+      <list>
+        <option value="$USER_HOME$/Code/loopback-model-shutdown" />
+      </list>
+    </option>
+    <option name="lastPath" value="$USER_HOME$/Code/loopback-model-shutdown" />
     <option name="lastProjectLocation" value="$USER_HOME$/Code" />
   </component>
 </application>

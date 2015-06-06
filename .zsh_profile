@@ -34,9 +34,7 @@ alias vsus="vagrant suspend"
 alias mt='multitail --config ~/.multitail -CS php'
 alias kmongo='mongo admin --eval "db.shutdownServer()" > /dev/null'
 
-
 ##############
 # Node /iojs #
 ##############
-alias node='node --harmony_arrow_functions --es_staging'
 

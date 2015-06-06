@@ -10,7 +10,7 @@
     <property name="toolwindow.stripes.buttons.info.shown" value="true" />
     <property name="DeploymentNotificationsComponent.WarnDisplayed.Java7&amp;Windows7FTPIssue" value="false" />
     <property name="bashsupport.weddingNotification.shown" value="0" />
-    <property name="lastTip" value="3" />
+    <property name="lastTip" value="4" />
     <property name="file.colors.enable.non.project" value="494539" />
     <property name="Non-Project Files" value="494539" />
     <property name="ChangesViewManager.DETAILS_SPLITTER_PROPORTION" value="0.5" />
@@ -24,5 +24,9 @@
     <property name="evlsprt.PS-141.792" value="14d7a6be180" />
     <property name="evlsprt2.PS-141.792" value="14d1db99072" />
     <property name="MoveFile.OpenInEditor" value="true" />
+    <property name="evlsprt3.PS-141.1306" value="11" />
+    <property name="INSPECTION_FILTER_HISTORY" value="&quot;New in 13&quot;" />
+    <property name="PLUGIN_FILTER" value="iojs&#10;javascript&#10;java" />
+    <property name="settings.code.style.selected.tab.JavaScript" value="Blank Lines" />
   </component>
 </application>

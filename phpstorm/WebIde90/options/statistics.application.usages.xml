@@ -1,33 +1,32 @@
 <application>
   <component name="StatisticsApplicationUsages">
-    <group name="JavaScript versions">
-      <project id="phpapp" values="DEFAULT" collectionTime="1430114836689" />
-      <project id="frontline" values="DEFAULT" collectionTime="1432011455932" />
-      <project id="slcTalk" values="DEFAULT" collectionTime="1429925754534" />
+    <group name="php-interpreters">
+      <project id="phpapp" values="0" collectionTime="1430114836693" />
+      <project id="frontline" values="0" collectionTime="1432011455940" />
+      <project id="slcTalk" values="0" collectionTime="1429925754543" />
+      <project id="loopback-model-shutdown" values="0" collectionTime="1433395213376" />
     </group>
     <group name="module type">
       <project id="phpapp" values="WEB_MODULE" collectionTime="1430114836596" />
       <project id="frontline" values="WEB_MODULE" collectionTime="1432011455766" />
       <project id="slcTalk" values="WEB_MODULE" collectionTime="1429925754400" />
+      <project id="loopback-model-shutdown" values="WEB_MODULE" collectionTime="1433395213360" />
     </group>
     <group name="vcs">
       <project id="phpapp" values="Git" collectionTime="1430114836595" />
       <project id="frontline" values="Git" collectionTime="1432011455765" />
     </group>
-    <group name="php-interpreters">
-      <project id="phpapp" values="0" collectionTime="1430114836693" />
-      <project id="frontline" values="0" collectionTime="1432011455940" />
-      <project id="slcTalk" values="0" collectionTime="1429925754543" />
-    </group>
     <group name="file-type">
-      <project id="phpapp" values="XML,JSON,htaccess,TypeScript,Locale,Markdown,Bash,ReST,Ini,Images,C++,PLAIN_TEXT,CSS,JavaScript,PHP,UNKNOWN,YAML" collectionTime="1430114836609" />
-      <project id="frontline" values="Blade,Cucumber,Bash,SourceMap,YAML,Less,Images,JSCS,HTML,XML,PHP,Markdown,CSS,JSON,UNKNOWN,DATASOURCE_STORAGE,JSHint,PLAIN_TEXT,ReST,Native,SmartyConfig,Ini,Locale,SQL,TypeScript,JavaScript,ARCHIVE" collectionTime="1432011455772" />
-      <project id="slcTalk" values="Ini,Bash,JSON,JavaScript,C++,YAML,XML,htaccess,Locale,Images,Markdown,PLAIN_TEXT,TypeScript,UNKNOWN,ReST,CSS,PHP" collectionTime="1429925754404" />
+      <project id="phpapp" values="JavaScript,TypeScript,Images,JSON,Locale,Ini,PHP,UNKNOWN,Markdown,YAML,ReST,XML,CSS,Bash,C++,PLAIN_TEXT,htaccess" collectionTime="1430114836609" />
+      <project id="frontline" values="JSON,SourceMap,TypeScript,JavaScript,Ini,ReST,SmartyConfig,JSHint,UNKNOWN,Markdown,Native,YAML,Less,Images,Locale,PHP,ARCHIVE,Cucumber,XML,HTML,Bash,PLAIN_TEXT,SQL,CSS,DATASOURCE_STORAGE,Blade,JSCS" collectionTime="1432011455772" />
+      <project id="slcTalk" values="PLAIN_TEXT,CSS,Images,TypeScript,htaccess,ReST,Markdown,PHP,Locale,JSON,Ini,UNKNOWN,Bash,C++,JavaScript,YAML,XML" collectionTime="1429925754404" />
+      <project id="loopback-model-shutdown" values="JSCS,PLAIN_TEXT,JSON,UNKNOWN,JavaScript,XML" collectionTime="1433395213365" />
     </group>
     <group name="php-interpreter-version">
       <project id="phpapp" values="not installed" collectionTime="1430114836692" />
       <project id="frontline" values="not installed" collectionTime="1432011455939" />
       <project id="slcTalk" values="not installed" collectionTime="1429925754541" />
+      <project id="loopback-model-shutdown" values="not installed" collectionTime="1433395213375" />
     </group>
     <group name="jdbc-driver">
       <project id="frontline" values="com.mysql.jdbc.Driver" collectionTime="1432011455930" />
@@ -36,21 +35,34 @@
       <project id="phpapp" values="0" collectionTime="1430114836689" />
       <project id="frontline" values="75" collectionTime="1432011455934" />
       <project id="slcTalk" values="0" collectionTime="1429925754536" />
+      <project id="loopback-model-shutdown" values="0" collectionTime="1433395213372" />
+    </group>
+    <group name="JavaScript versions">
+      <project id="phpapp" values="DEFAULT" collectionTime="1430114836689" />
+      <project id="frontline" values="DEFAULT" collectionTime="1432011455932" />
+      <project id="slcTalk" values="DEFAULT" collectionTime="1429925754534" />
+      <project id="loopback-model-shutdown" values="DEFAULT" collectionTime="1433395213372" />
     </group>
     <group name="javaScript Scope Usages">
       <project id="phpapp" values="Project,Project" collectionTime="1430114836688" />
       <project id="frontline" values="Project,Project" collectionTime="1432011455932" />
       <project id="slcTalk" values="Project,Project" collectionTime="1429925754534" />
+      <project id="loopback-model-shutdown" values="Project,Project,Directory,Project,Project,Project" collectionTime="1433395213372" />
     </group>
     <group name="php-debug-skipped-paths">
       <project id="phpapp" values="0" collectionTime="1430114836694" />
       <project id="frontline" values="0" collectionTime="1432011455942" />
       <project id="slcTalk" values="0" collectionTime="1429925754545" />
+      <project id="loopback-model-shutdown" values="0" collectionTime="1433395213377" />
     </group>
     <group name="php-servers">
       <project id="phpapp" values="0" collectionTime="1430114836692" />
       <project id="frontline" values="0" collectionTime="1432011455939" />
       <project id="slcTalk" values="0" collectionTime="1429925754541" />
+      <project id="loopback-model-shutdown" values="0" collectionTime="1433395213375" />
+    </group>
+    <group name="javaScript Frameworks">
+      <project id="loopback-model-shutdown" values="node_modules" collectionTime="1433395213372" />
     </group>
   </component>
   <component name="UsageTrigger">
@@ -60,8 +72,10 @@
       <entry feature="ide.settings.Blade" count="2" />
       <entry feature="ide.settings.Colors_&amp;_Fonts" count="6" />
       <entry feature="ide.settings.General" count="2" />
+      <entry feature="ide.settings.JSCS" count="1" />
       <entry feature="ide.settings.Keymap" count="4" />
-      <entry feature="ideaapp.started" count="3" />
+      <entry feature="ide.settings.Libraries" count="2" />
+      <entry feature="ideaapp.started" count="5" />
       <entry feature="welcome.screen.WelcomeScreen.CreateWebProject" count="1" />
       <entry feature="welcome.screen.WelcomeScreen.OpenDirectoryProject" count="1" />
     </counts>

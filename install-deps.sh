@@ -1,5 +1,6 @@
-# up to you (me) if you want to run this as a file or copy paste at your leisure
+#!/bin/bash
 
+# up to you (me) if you want to run this as a file or copy paste at your leisure
 
 # https://github.com/jamiew/git-friendly
 # the `push` command which copies the github compare URL to my clipboard is heaven
@@ -16,12 +17,7 @@ curl -L https://get.rvm.io | bash -s stable --ruby
 
 # homebrew!
 # you need the code CLI tools YOU FOOL.
-
-# google machines are funny so i have to do this. everyone else should use the regular thang
-mkdir $HOME/.homebrew && curl -L https://github.com/mxcl/homebrew/tarball/master | tar xz --strip 1 -C $HOME/.homebrew
-export PATH=$HOME/.homebrew/bin:$HOME/.homebrew/sbin:$PATH
-
-
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # https://github.com/rupa/z
 # z, oh how i love you
@@ -31,7 +27,6 @@ export PATH=$HOME/.homebrew/bin:$HOME/.homebrew/sbin:$PATH
 # also consider moving over your current .z file if possible. it's painful to rebuild :)
 
 # z binary is already referenced from .bash_profile
-
 
 # https://github.com/thebitguru/play-button-itunes-patch
 # disable itunes opening on media keys
@@ -46,15 +41,42 @@ export PATH=$HOME/.homebrew/bin:$HOME/.homebrew/sbin:$PATH
 # now you can record photobooth videos quickly and they upload to dropbox DURING RECORDING
 # then you grab public URL and send off your video message in a heartbeat.
 
-
 # for the c alias (syntax highlighted cat)
 sudo easy_install Pygments
 
 # chrome canary as default
 # on a mac you can set chrome canary as your default inside of Safari preferences :)
 
+#install nvm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash
+
+sh ./.osx
+
+nvm install iojs
+
+npm install -g strongloop ionic yo
+
+brew bundle Brewfile
+brew bundle Caskfile
+
 # Setup Mongo
-mkdir - p ~/code
-cd ~/Code/mongo-hacker
-make
+mkdir - p ~/Code
+$_
 git clone git@github.com:TylerBrock/mongo-hacker.git
+
+#install ohmyzsh
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+
+cd ~/
+ln -s ~/Code/dotfiles/.zsh* ~/
+ln -s ~/Code/dotfiles/.vi* ~/
+ln -s ~/Code/dotfiles/.multi* ~/
+ln -s ~/Code/dotfiles/.wget* ~/
+ln -s ~/Code/dotfiles/.mongo* ~/
+ln -s ~/Code/dotfiles/.git* ~/
+
+#setup Sublime
+rm -rf ~/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings
+cp ~/Code/dotfiles/sublimeText3/Preferences.sublime-settings ~/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings
+
+

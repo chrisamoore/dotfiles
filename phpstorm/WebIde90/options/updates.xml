@@ -2,7 +2,8 @@
   <component name="UpdatesConfigurable">
     <outdatedPlugins>
       <item value="com.jetbrains.plugins.jade" />
-      <item value="NodeJS" />
+      <item value="AngularJS" />
+      <item value="com.intellij.lang.puppet" />
     </outdatedPlugins>
     <option name="UPDATE_CHANNEL_TYPE" value="eap" />
   </component>

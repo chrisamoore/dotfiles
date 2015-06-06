@@ -1,4 +1,4 @@
-I# Install command-line tools using Homebrew
+# Install command-line tools using Homebrew
 # Usage: `brew bundle Brewfile`
 
 # Make sure we’re using the latest Homebrew
@@ -34,15 +34,15 @@ install ack
 #install exiv2
 install git
 install imagemagick --with-webp
-install node # This installs `npm` too using the recommended installation method
 install pv
 install rename
 install tree
 install zopfli
 install ffmpeg --with-libvpx
-install android-platform-tools
 install python
 install cask
+install mongodb
+install redis
 
 # Remove outdated versions from the cellar
 cleanup

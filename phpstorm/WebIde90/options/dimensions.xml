@@ -8,5 +8,7 @@
     <location key="findTextDialog.0.0.1920.1200" x="754" y="366" />
     <location key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0.0.0.1920.1200" x="722" y="216" />
     <location key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1.0.0.1920.1200" x="722" y="137" />
+    <location key="#Browse_Repositories.0.0.1920.1200" x="547" y="261" />
+    <location key="#com.intellij.ide.scriptingContext.ui.LibraryScopesDialog.0.0.1920.1200" x="697" y="386" />
   </component>
 </application>
