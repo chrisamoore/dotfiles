@@ -53,30 +53,33 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | b
 sh ./.osx
 
 nvm install iojs
-
+nvm alias default iojs
 npm install -g strongloop ionic yo
 
-brew bundle Brewfile
-brew bundle Caskfile
+sh ~/Code/dotfiles/Brewfile
+sh ~/Code/dotfiles/Caskfile
 
 # Setup Mongo
-mkdir - p ~/Code
-$_
-git clone git@github.com:TylerBrock/mongo-hacker.git
+sudo mkdir -p /data/db
+sudo chown -R $(whoami) /data
 
 #install ohmyzsh
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 cd ~/
-ln -s ~/Code/dotfiles/.zsh* ~/
-ln -s ~/Code/dotfiles/.vi* ~/
-ln -s ~/Code/dotfiles/.multi* ~/
-ln -s ~/Code/dotfiles/.wget* ~/
-ln -s ~/Code/dotfiles/.mongo* ~/
-ln -s ~/Code/dotfiles/.git* ~/
+mv .zshrc .zshrc_
+cp ~/Code/dotfiles/ohmyzsh/cam.zsh-theme ~/.oh-my-zsh/themes
+ln -s Code/dotfiles/.zsh_git ~/
+ln -s Code/dotfiles/.zsh_profile ~/
+ln -s Code/dotfiles/.zshrc ~/
+ln -s Code/dotfiles/.zshrc ~/
+ln -s Code/dotfiles/.zsh_paths ~/
+ln -s Code/dotfiles/.wgetrc ~/
+ln -s Code/dotfiles/.mongorc.js ~/
+ln -s Code/dotfiles/.multitailrc ~/
+ln -s Code/dotfiles/.vim ~/
+ln -s Code/dotfiles/.vimrc ~/
 
 #setup Sublime
-rm -rf ~/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings
-cp ~/Code/dotfiles/sublimeText3/Preferences.sublime-settings ~/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings
-
+cp ~/Code/dotfiles/sublimeText3/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 

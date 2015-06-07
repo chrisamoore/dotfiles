@@ -1,21 +1,10 @@
 #PATHS
-export GOPATH=$HOME/go:/usr/local/go/bin:
-export PATH=$PATH:$GOPATH/bin
 
-export COMPOSER=~/.composer/vendor/bin:vendor/bin:
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-export NODE=/usr/local/bin/node:node_modules/.bin:
-export NPM=/usr/local/bin/npm:
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-export ANDROIDTOOLS=/Applications/android-sdk/platform-tools:
-export ANDROID_HOME="~/Library/Android/sdk"
-export ANDROID_TOOLS="~/Library/Android/sdk/tools/"
-export ANDROID_PLATFORM_TOOLS="~/Library/Android/sdk/platform-tools/"
-
-export RUBY=/usr/local/opt/ruby/bin:
-
-export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$NODE:$NPM:$COMPOSER:$ANDROIDTOOLS:$RUBY
-
-export NVM_DIR="~/.nvm"
+export NVM_DIR="/Users/cmoore/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
+

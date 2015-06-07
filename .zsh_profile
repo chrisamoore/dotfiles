@@ -38,3 +38,4 @@ alias kmongo='mongo admin --eval "db.shutdownServer()" > /dev/null'
 # Node /iojs #
 ##############
 
+export NVM_SYMLINK_CURRENT=true

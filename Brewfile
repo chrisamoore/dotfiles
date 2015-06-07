@@ -44,6 +44,7 @@ install python
 install cask
 install mongodb
 install redis
+install multitail
 
 # Remove outdated versions from the cellar
 cleanup

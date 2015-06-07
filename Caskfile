@@ -1,26 +1,27 @@
 # Install native apps
 # Usage: `brew bundle Caskfile`
 
-install caskroom/cask/brew-cask
-tap caskroom/homebrew-versions
+brew install caskroom/cask/brew-cask
+brew tap caskroom/homebred-versions
 
 # daily
-cask install onepassword 				2> /dev/null
+brew cask install onepassword --force 						2> /dev/null
 
 # dev
-cask install iterm2             2> /dev/null
-cask install sublime-text3 			2> /dev/null
-cask install sequelpro          2> /dev/null
-cask install mou                2> /dev/null
-cask install github             2> /dev/null
-cask install spotify            2> /dev/null
-cask install virtualbox         2> /dev/null
-cask install vagrant            2> /dev/null
-cask install phpstorm           2> /dev/null
-cask install webstorm           2> /dev/null
-cask install vlc              2> /dev/null
+brew cask install iterm2 --force             				2> /dev/null
+brew cask install sublime-text3 --force 					2> /dev/null
+brew cask install sequelpro --force          				2> /dev/null
+brew cask install mou --force                				2> /dev/null
+brew cask install github --force             				2> /dev/null
+brew cask install spotify --force            				2> /dev/null
+brew cask install virtualbox --force         				2> /dev/null
+brew cask install vagrant --force            				2> /dev/null
+brew cask install phpstorm --force           				2> /dev/null
+brew cask install webstorm --force           				2> /dev/null
+brew cask install vlc --force                				2> /dev/null
+brew cask install caskroom/homebrew-versions/java6 --force  2> /dev/null
 
 # browsers
-cask install google-chrome       			2> /dev/null
-cask install google-chrome-canary 			2> /dev/null
-cask install chromecast         2> /dev/null
+brew cask install google-chrome  —-force       			    2> /dev/null
+brew cask install google-chrome-canary --force 			    2> /dev/null
+brew cask install chromecast --force                        2> /dev/null

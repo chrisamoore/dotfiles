@@ -1278,7 +1278,7 @@ setVerboseShell(true);
 DBQuery.prototype._prettyShell = true
 DBQuery.prototype._dropall = function(){
     console.log('DROP ALL THE DB\'s LIKE THEY HOT!');
-});
+};
 
 DB.prototype._getExtraInfo = function(action) {
     if ( typeof _verboseShell === 'undefined' || !_verboseShell ) {
