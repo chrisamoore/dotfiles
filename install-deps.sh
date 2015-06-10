@@ -63,22 +63,7 @@ sh ~/Code/dotfiles/Caskfile
 sudo mkdir -p /data/db
 sudo chown -R $(whoami) /data
 
-#install ohmyzsh
-curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-
-cd ~/
-mv .zshrc .zshrc_
-cp ~/Code/dotfiles/ohmyzsh/cam.zsh-theme ~/.oh-my-zsh/themes
-ln -s Code/dotfiles/.zsh_git ~/
-ln -s Code/dotfiles/.zsh_profile ~/
-ln -s Code/dotfiles/.zshrc ~/
-ln -s Code/dotfiles/.zshrc ~/
-ln -s Code/dotfiles/.zsh_paths ~/
-ln -s Code/dotfiles/.wgetrc ~/
-ln -s Code/dotfiles/.mongorc.js ~/
-ln -s Code/dotfiles/.multitailrc ~/
-ln -s Code/dotfiles/.vim ~/
-ln -s Code/dotfiles/.vimrc ~/
+sh ~/Code/dotfiles/sync_dotfiles.sh
 
 #setup Sublime
 cp ~/Code/dotfiles/sublimeText3/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
