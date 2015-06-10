@@ -39,3 +39,13 @@ alias kmongo='mongo admin --eval "db.shutdownServer()" > /dev/null'
 ##############
 
 export NVM_SYMLINK_CURRENT=true
+export HOST=camdesigns
+
+##############
+# Docker     #
+##############
+
+alias rm_containers='docker rm $(docker ps -a -q)'
+alias rm_images='docker rmi $(docker images -q)'
+alias docker_cleanup='rm_containers && rm_images && boot2docker stop '
+alias b2d='boot2docker start'
