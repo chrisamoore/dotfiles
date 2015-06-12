@@ -1,0 +1,12 @@
+##############
+# Docker     #
+##############
+alias rm_containers='docker rm $(docker ps -a -q)'
+alias rm_images='docker rmi $(docker images -q)'
+alias docker_cleanup='rm_containers && rm_images && boot2docker stop '
+alias b2d='boot2docker start'
+
+# DOCKER `boot2docker start` prompts for these
+export DOCKER_CERT_PATH=/Users/cmoore/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+export DOCKER_HOST=tcp://192.168.59.103:2376

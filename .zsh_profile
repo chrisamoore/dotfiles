@@ -20,32 +20,9 @@ alias home='cd ${HOME}'
 alias up='cd ..'
 alias htr='history | grep'
 
-###########
-# Vagrant #
-###########
-alias vup="vagrant up"
-alias vd="vagrant destroy -f"
-alias vssh="vagrant ssh"
-alias vsus="vagrant suspend"
-
 #############
 # Multitail #
 #############
 alias mt='multitail --config ~/.multitail -CS php'
+
 alias kmongo='mongo admin --eval "db.shutdownServer()" > /dev/null'
-
-##############
-# Node /iojs #
-##############
-
-export NVM_SYMLINK_CURRENT=true
-export HOST=camdesigns
-
-##############
-# Docker     #
-##############
-
-alias rm_containers='docker rm $(docker ps -a -q)'
-alias rm_images='docker rmi $(docker images -q)'
-alias docker_cleanup='rm_containers && rm_images && boot2docker stop '
-alias b2d='boot2docker start'

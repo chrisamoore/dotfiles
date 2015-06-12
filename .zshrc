@@ -45,6 +45,12 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.zsh_profile
 source $HOME/.zsh_paths
 source $HOME/.zsh_git
+source $HOME/.zsh_docker
+source $HOME/.zsh_vagrant
+source $HOME/.zsh_node
+source $HOME/.zsh_ruby
+
+
 # source $HOME/.zsh_qalias
 #Sexy Bash Prompt, inspired by "Extravagant Zsh Prompt"
 # Screenshot: http://img.gf3.ca/d54942f474256ec26a49893681c49b5a.png

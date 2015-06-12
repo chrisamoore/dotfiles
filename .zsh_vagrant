@@ -1,0 +1,7 @@
+###########
+# Vagrant #
+###########
+alias vup="vagrant up"
+alias vd="vagrant destroy -f"
+alias vssh="vagrant ssh"
+alias vsus="vagrant suspend"
