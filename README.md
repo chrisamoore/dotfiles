@@ -74,3 +74,6 @@ git clone git@github.com:chrisamoore/dotfiles.git && cd dotfiles && sh ./sync_do
 ```
 
 To update later on, just run the sync again.
+
+## Terminal preview
+![cam-term](http://camdesigns.net/images/term-cam.png)
