@@ -1,0 +1,12 @@
+# This is Git's per-user configuration file.
+[core]
+# Please adapt and uncomment the following lines:
+	user = chrisamoore
+	email = chris@camdesigns.net
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
+[user]
+	name = Christopher A. Moore
+	email = chris@camdesigns.net

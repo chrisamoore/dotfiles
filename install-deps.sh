@@ -55,7 +55,7 @@ sh ./.osx
 
 nvm install iojs
 nvm alias default iojs
-npm install -g strongloop ionic yo
+npm install -g strongloop ionic yo bower
 
 sh ~/Code/dotfiles/Brewfile
 sh ~/Code/dotfiles/Caskfile

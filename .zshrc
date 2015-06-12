@@ -49,7 +49,7 @@ source $HOME/.zsh_docker
 source $HOME/.zsh_vagrant
 source $HOME/.zsh_node
 source $HOME/.zsh_ruby
-
+source $HOME/.functions
 
 # source $HOME/.zsh_qalias
 #Sexy Bash Prompt, inspired by "Extravagant Zsh Prompt"

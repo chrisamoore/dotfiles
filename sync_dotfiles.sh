@@ -21,6 +21,10 @@ mv ~/.zsh_ruby ~/.zsh_backup/
 mv ~/.zsh_vagrant ~/.zsh_backup/
 mv ~/.zshrc ~/.zsh_backup/
 
+mv ~/.functions ~/.zsh_backup/
+mv ~/.gitconfig ~/.zsh_backup/
+mv ~/.gitignore_global ~/.zsh_backup/
+
 mv ~/.mongorc.js ~/.zsh_backup/
 mv ~/.multitailrc ~/.zsh_backup/
 mv ~/.vim ~/.zsh_backup/
@@ -39,11 +43,18 @@ ln -s ~/Code/dotfiles/.zsh_profile ~/
 ln -s ~/Code/dotfiles/.zsh_ruby ~/
 ln -s ~/Code/dotfiles/.zsh_vagrant ~/
 ln -s ~/Code/dotfiles/.zshrc ~/
+ln -s ~/Code/dotfiles/.functions ~/
 
 ln -s ~/Code/dotfiles/.mongorc.js ~/
 ln -s ~/Code/dotfiles/.multitailrc ~/
 ln -s ~/Code/dotfiles/.vim ~/
 ln -s ~/Code/dotfiles/.vimrc ~/
 ln -s ~/Code/dotfiles/.wgetrc ~/
+
+ln -s ~/Code/dotfiles/.gitconfig ~/
+ln -s ~/Code/dotfiles/.gitignore_global ~/
+
+# Install the Solarized Dark theme for iTerm
+open "${HOME}/Code/dotfiles/iterm2/cam.itermcolors"
 
 source ~/.zshrc
