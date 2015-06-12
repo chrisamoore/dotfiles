@@ -3,7 +3,7 @@
 
 ## install the necessary apps
 
-My basic setup is captured in `install-deps.sh` which adds homebrew, z, nave, etc.
+My basic setup is captured in `install-deps.sh` which adds homebrew, ruby etc.
 
 ## private config
 
@@ -23,13 +23,6 @@ PATH=$PATH:~/code/git-friendly
 export PATH
 ```
 
-## Syntax highlighting
-
-…is really important. even for these files.
-
-Install [Dotfiles Syntax Highlighting](https://github.com/mattbanks/dotfiles-syntax-highlighting-st2) via [Sublime Text 2 Package Control](http://wbond.net/sublime_packages/package_control)
-
-
 ### Sensible OS X defaults
 
 When setting up a new Mac, you may want to set some sensible OS X defaults:
@@ -46,29 +39,19 @@ I recommend getting a [`.jshintrc`](https://github.com/jshint/node-jshint/blob/m
 ## NPM things
 
 ```bash
-npm install -g jsfmt bower yo
+npm install -g strongloop ionic yo bower
 ```
-
 
 ## overview of files
 
 ####  Automatic config
-* `.ackrc` - for ack (better than grep)
 * `.vimrc`, `.vim` - vim config, obv.
-
-#### shell environment
-* `.aliases`
-* `.bash_profile`
-* `.bash_prompt`
-* `.bashrc`
-* `.exports`
-* `.functions`
-* `.extra` - not included, explained above
 
 #### manual run
 * `install-deps.sh` - random apps i need installed
 * `.osx` - run on a fresh osx machine
-* `.brew` - homebrew initialization
+* `Brewfile - homebrew initialization
+* `Caskfile - homebrew cask install apps initialization
 
 #### git, brah
 * `.git`
@@ -76,13 +59,18 @@ npm install -g jsfmt bower yo
 * `.gitconfig`
 * `.gitignore`
 
-* `.inputrc` - config for bash readline
 
-
-## Installation
+## Installation 
 
 ```bash
-git clone git@github.com:chrisamoore/dotfiles.git && cd dotfiles && ./sync.sh
+git clone git@github.com:chrisamoore/dotfiles.git && cd dotfiles && sh ./install_deps.sh
+# I recommend using iterm2 and importing the cam theme from the iterm2 dir in the repo
+```
+
+## Installation dotfiles only
+
+```bash
+git clone git@github.com:chrisamoore/dotfiles.git && cd dotfiles && sh ./sync_dotfiles.sh
 ```
 
 To update later on, just run the sync again.
