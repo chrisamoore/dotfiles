@@ -6,4 +6,3 @@ export NVM_DIR="~/.nvm"
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 
 export NVM_SYMLINK_CURRENT=true
-export HOST=camdesigns
