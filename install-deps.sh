@@ -48,14 +48,7 @@ gem install genghisapp
 # chrome canary as default
 # on a mac you can set chrome canary as your default inside of Safari preferences :)
 
-#install nvm
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash
-
 sh ./.osx
-
-nvm install iojs
-nvm alias default iojs
-npm install -g strongloop ionic yo bower
 
 sh ~/Code/dotfiles/Brewfile
 sh ~/Code/dotfiles/Caskfile
@@ -69,3 +62,8 @@ sh ~/Code/dotfiles/sync_dotfiles.sh
 #setup Sublime
 ln -s ~/Code/dotfiles/sublimeText3/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 ln -s ~/Code/dotfiles/sublimeText3/Cam.tmTheme ~/Library/Application\ Support/Sublime\ Text\ 3/Cache/Color\ Scheme\ -\ Default/
+
+brew bundle Brewfile
+
+nvm install iojs
+nvm alias default iojs

@@ -40,7 +40,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(zsh_reload nvm brew gitfast git-prompt git-extras colorize colored-man composer history node-api npm osx vagrant zsh-syntax-highlighting screen jsontools zsh_reload bower redis-cli screen vagrant)
+plugins=(zsh_reload brew gitfast git-prompt git-extras colorize colored-man composer history node-api npm osx vagrant zsh-syntax-highlighting screen jsontools zsh_reload bower redis-cli screen vagrant)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.zsh_profile
@@ -90,5 +90,3 @@ else
 fi
 
  #PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]at \[$ORANGE\]\h \[$WHITE\]in \[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$WHITE\]\n\$ \[$RESET\]"
-
-

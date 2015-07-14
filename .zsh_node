@@ -1,5 +1,5 @@
 ##############
 # Node /iojs #
 ##############
-source ~/.nvm/nvm.sh
-export NVM_SYMLINK_CURRENT=true
+
+# source /usr/local/opt/nvm/nvm.sh

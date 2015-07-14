@@ -30,6 +30,7 @@ install homebrew/dupes/screen
 install homebrew/php/php55 --with-gmp
 
 # Install other useful binaries
+install nvm
 install ack
 #install exiv2
 install git
@@ -45,6 +46,7 @@ install cask
 install mongodb
 install redis
 install multitail
+
 
 # Remove outdated versions from the cellar
 cleanup
