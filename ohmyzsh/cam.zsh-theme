@@ -47,7 +47,6 @@ else
   fi
 fi
 local git_branch='$(git_prompt_info)%{$PR_NO_COLOR%}'
-
 #PROMPT="${user_host} ${current_dir} ${rvm_ruby} ${git_branch}$PR_PROMPT "
 # PROMPT="╭─${user_host} ${current_dir} ${rvm_ruby} ${git_branch}
 PROMPT="╭─${user_host} ${rvm_ruby} ${nvm_node} ${current_dir} $RPROMPT
