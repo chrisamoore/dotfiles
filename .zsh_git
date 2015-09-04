@@ -110,6 +110,10 @@ function commit(){
   fi
 }
 
+function gap(){
+ gad && gcm $1 && gph $2 $3
+}
+
 parse_git_dirty () {
   [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "*)"
 }

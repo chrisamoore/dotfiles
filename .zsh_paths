@@ -3,5 +3,5 @@
 # PATH=$PATH:/opt/local/sbin
 # PATH=$PATH:/bin
 # PATH=$PATH:~/.rvm/bin
-
-export PATH="/usr/local/sbin:$PATH"
+export NPM_BIN='./node_modules/.bin'
+export PATH="$NPM_BIN:/usr/local/sbin:$PATH"
