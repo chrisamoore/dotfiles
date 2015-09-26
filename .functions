@@ -244,3 +244,56 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+killscreens () {
+    screen -ls | grep Detached | cut -d. -f1 | awk '{print $1}' | xargs kill
+}
+
+# Requires nvm
+# This will take a yml swagger spec aond convert it to bluprint for tooling
+# start the tools
+# build the API
+function swag2apib() {
+	nvm use 0.10.40;
+
+	if ! [ -x "$(command -v swagger2blueprint)" ]; then
+		npm i -g swagger2blueprint;
+	else
+		echo "swagger2blueprint installed already on 0.10.40";
+	fi;
+
+	nvm use 0.12.7;
+
+	if ! [ -x "$(command -v strongloop)" ]; then
+		echo "strongloop not installed on 0.12.7";
+
+		# npm i -g strongloop;
+	else
+		echo "strongloop installed already on 0.12.7";
+	fi;
+
+	if ! [ -x "$(command -v api-mock)" ]; then
+		echo "api-mock not installed on 0.12.7";
+		# npm i -g api-mock;
+	else
+		echo "api-mock installed already on 0.12.7";
+	fi;
+
+	if ! [ -x "$(command -v aglio)" ]; then
+		echo "aglio not installed on 0.12.7";
+		# npm i -g aglio;
+	else
+		echo "aglio installed already on 0.12.7";
+	fi;
+
+	nvm use 0.10.40;
+
+	swagger2blueprint $1 $2;
+
+	nvm use 0.12.7;
+
+	screen -dmS aglio /bin/zsh -c "nvm use 0.12.7; aglio -i $2 -p 4001 -s; exec /bin/zsh"
+	screen -dmS api-mock /bin/zsh -c "nvm use 0.12.7; api-mock $2 -p 4000 -k; exec /bin/zsh"
+	screen -dmS strongloop /bin/zsh -c "nvm use 0.12.7; exec /bin/zsh"
+
+}
