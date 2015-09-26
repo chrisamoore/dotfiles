@@ -1,17 +1,6 @@
-##############
-# Docker     #
-##############
-# DOCKER `boot2docker start` prompts for these
-export DOCKER_CERT_PATH=/Users/cmoore/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
-export DOCKER_HOST=tcp://192.168.59.103:2376
-alias docker="docker --tlsverify=false"
-
-alias b2d='boot2docker start'
-alias rm_containers='docker rm $(docker ps -a -q)'
-alias stop_containers='docker stop $(docker ps -a -q)'
-alias rm_images='docker rmi $(docker images -q)'
-alias docker_cleanup='rm_containers && rm_images && boot2docker stop '
+############################################
+# Docker GET THESE FROM DOCKER_MACHINE     #
+############################################
 
  # Get latest container ID
  alias dl="docker ps -l -q"
@@ -41,7 +30,7 @@ alias docker_cleanup='rm_containers && rm_images && boot2docker stop '
  drm() { docker rm $(docker ps -a -q); }
 
  # Stop and Remove all containers
- alias drmf='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
+ alias drmf='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q) && dpa'
 
  # Remove all images
  dri() { docker rmi $(docker images -q); }
@@ -51,3 +40,9 @@ alias docker_cleanup='rm_containers && rm_images && boot2docker stop '
 
  # Show all alias related docker
  dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
+
+ dcu() { docker-compose up; }
+
+ dcd() { docker-compose stop; }
+
+ dsrc() { docker-machine env $1; echo "just executed ^"; eval "$(docker-machine env $1)" }

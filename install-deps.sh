@@ -63,7 +63,4 @@ sh ~/Code/dotfiles/sync_dotfiles.sh
 ln -s ~/Code/dotfiles/sublimeText3/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 ln -s ~/Code/dotfiles/sublimeText3/Cam.tmTheme ~/Library/Application\ Support/Sublime\ Text\ 3/Cache/Color\ Scheme\ -\ Default/
 
-brew bundle Brewfile
 
-nvm install iojs
-nvm alias default iojs

@@ -23,5 +23,5 @@ brew cask install caskroom/homebrew-versions/java6 --force  2> /dev/null
 
 # browsers
 brew cask install google-chrome  —-force       			    2> /dev/null
-brew cask install google-chrome-canary --force 			    2> /dev/null
+# brew cask install google-chrome-canary --force 			    2> /dev/null
 brew cask install chromecast --force                        2> /dev/null

@@ -1,6 +1,29 @@
 # Chris's dotfiles
 - Forked from [Paul Irish](https://github.com/paulirish/dotfiles) and Modded slightly
 
+
+## Installation 
+
+```bash
+git clone git@github.com:chrisamoore/dotfiles.git && cd dotfiles && sh ./install_deps.sh
+# I recommend using iterm2 and importing the cam theme from the iterm2 dir in the repo
+```
+
+## Installation dotfiles only
+
+```bash
+git clone git@github.com:chrisamoore/dotfiles.git && cd dotfiles && sh ./sync_dotfiles.sh
+```
+
+To update later on, just run the sync again.
+
+## Terminal preview
+![cam-term](http://camdesigns.net/images/term-cam.png)
+
+
+<hr>
+
+
 ## install the necessary apps
 
 My basic setup is captured in `install-deps.sh` which adds homebrew, ruby etc.
@@ -59,21 +82,3 @@ npm install -g strongloop ionic yo bower
 * `.gitconfig`
 * `.gitignore`
 
-
-## Installation 
-
-```bash
-git clone git@github.com:chrisamoore/dotfiles.git && cd dotfiles && sh ./install_deps.sh
-# I recommend using iterm2 and importing the cam theme from the iterm2 dir in the repo
-```
-
-## Installation dotfiles only
-
-```bash
-git clone git@github.com:chrisamoore/dotfiles.git && cd dotfiles && sh ./sync_dotfiles.sh
-```
-
-To update later on, just run the sync again.
-
-## Terminal preview
-![cam-term](http://camdesigns.net/images/term-cam.png)
