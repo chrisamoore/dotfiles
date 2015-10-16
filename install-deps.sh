@@ -43,7 +43,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 # for the c alias (syntax highlighted cat)
 sudo easy_install Pygments
 
-gem install genghisapp
+# gem install genghisapp
 
 # chrome canary as default
 # on a mac you can set chrome canary as your default inside of Safari preferences :)
