@@ -1,0 +1,1 @@
+alias kub='kubectl --api-version="v1"'
