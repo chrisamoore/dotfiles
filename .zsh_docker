@@ -2,47 +2,72 @@
 # Docker GET THESE FROM DOCKER_MACHINE     #
 ############################################
 
- # Get latest container ID
- alias dl="docker ps -l -q"
+# Get latest container ID
+alias dl="docker ps -l -q"
 
- # Get container process
- alias dps="docker ps"
+# Get container process
+alias dps="docker ps"
 
- # Get process included stop container
- alias dpa="docker ps -a"
+# Get process included stop container
+alias dpa="docker ps -a"
 
- # Get images
- alias di="docker images"
+# Get images
+alias di="docker images"
 
- # Get container IP
- alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
+# Get container IP
+alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 
- # Run deamonized container, e.g., $dkd base /bin/echo hello
- alias dkd="docker run -d -P"
+# Run deamonized container, e.g., $dkd base /bin/echo hello
+alias dkd="docker run -d -P"
 
- # Run interactive container, e.g., $dki base /bin/bash
- alias dki="docker run -i -t -P"
+# Run interactive container, e.g., $dki base /bin/bash
+alias dki="docker run -i -t -P"
+alias dm="docker-machine"
+alias dc="docker-compose"
+# Stop all containers
+dstop() { docker stop $(docker ps -a -q); }
 
- # Stop all containers
- dstop() { docker stop $(docker ps -a -q); }
+# Remove all containers
+drm() { docker rm $(docker ps -a -q); }
 
- # Remove all containers
- drm() { docker rm $(docker ps -a -q); }
+# Stop and Remove all containers
+alias drmf='docker stop $(docker ps -a -q) && docker rm -v $(docker ps -a -q) && dpa'
 
- # Stop and Remove all containers
- alias drmf='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q) && dpa'
+alias docker-machine-nfs="sh ~/docker-machine-nfs.sh"
+alias dang='docker rmi $(docker images -f "dangling=true" -q)'
 
- # Remove all images
- dri() { docker rmi $(docker images -q); }
+# Remove all images
+dri() { docker rmi $(docker images -q); }
 
- # Dockerfile build, e.g., $dbu tcnksm/test
- dbu() { docker build -t=$1 .; }
+# Dockerfile build, e.g., $dbu tcnksm/test
+# dbu() { docker build -t=$1 .; }
 
- # Show all alias related docker
- dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
+# Show all alias related docker
+dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
 
- dcu() { docker-compose up; }
+dcu() { docker-compose up; }
 
- dcd() { docker-compose stop; }
+dcd() { docker-compose stop; }
 
- dsrc() { docker-machine env $1; echo "just executed ^"; eval "$(docker-machine env $1)" }
+dsrc() { eval "$(docker-machine env $1)"; echo $DOCKER_HOST | perl -pe 's/:[0-9]{4}|tcp:\/\///g'; }
+
+dcr() { docker-machine create -d virtualbox --virtualbox-boot2docker-url https://github.com/boot2docker/boot2docker/releases/download/v1.8.2/boot2docker.iso $1; dsrc $1 }
+
+dtag() { docker tag $1 $DOCKER_REGISTRY/$1; }
+
+dtp() { dtag($1) && docker push $DOCKER_REGISTRY/$1; }
+
+dbu() { docker build -t $DOCKER_REGISTRY/$1:$2 .; }
+
+dpu() { docker push $DOCKER_REGISTRY/$1; }
+
+dlo() {docker logs $1; }
+
+dmrebuild () {
+  docker-machine rm dev
+  docker-machine create -d virtualbox --virtualbox-dns-proxy --virtualbox-host-dns-resolver --virtualbox-memory=4096 --virtualbox-cpu-count "2" --engine-insecure-registry=$DOCKER_REGISTRY dev
+  dsrc dev
+}
+
+dm start dev
+dsrc dev

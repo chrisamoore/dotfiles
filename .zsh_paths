@@ -1,7 +1,4 @@
-# PATH=$(brew --prefix coreutils)/libexec/gnubin
-# PATH=/opt/local/bin
-# PATH=$PATH:/opt/local/sbin
-# PATH=$PATH:/bin
-# PATH=$PATH:~/.rvm/bin
 export NPM_BIN='./node_modules/.bin'
 export PATH="$NPM_BIN:/usr/local/sbin:$PATH"
+export DROID="$HOME/Library/Android/sdk/tools/"
+export PATH="$DROID:$PATH"

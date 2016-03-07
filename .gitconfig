@@ -3,11 +3,11 @@
 # Please adapt and uncomment the following lines:
 	user = cmoore
 	name = Christopher A. Moore
-	email = chris@camdesigns.net
+	email = chris.moore@everyonecounts.com
 [filter "lfs"]
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
 [user]
 	name = Christopher A. Moore
-	email = chris@camdesigns.net
+	email = chris.moore@everyonecounts.com

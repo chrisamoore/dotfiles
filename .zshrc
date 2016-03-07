@@ -43,13 +43,17 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(zsh_reload brew gitfast git-prompt git-extras colorize colored-man composer history node-api npm osx vagrant zsh-syntax-highlighting screen jsontools zsh_reload bower redis-cli screen vagrant)
 
 source $ZSH/oh-my-zsh.sh
+source $HOME/.zsh_machine
 source $HOME/.zsh_profile
 source $HOME/.zsh_paths
 source $HOME/.zsh_git
 source $HOME/.zsh_docker
+source $HOME/.zsh_kubernetes
+
 source $HOME/.zsh_vagrant
 source $HOME/.zsh_node
 source $HOME/.zsh_ruby
+source $HOME/.zsh_vpn
 source $HOME/.functions
 
 # source $HOME/.zsh_qalias

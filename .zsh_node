@@ -3,3 +3,6 @@
 ##############
 
 # source /usr/local/opt/nvm/nvm.sh
+#
+alias nst='. ./env/docker.env && npm start'
+alias nsw='. ./env/docker.env && npm run watch'

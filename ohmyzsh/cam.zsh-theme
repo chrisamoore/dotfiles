@@ -35,6 +35,8 @@ local return_code="%(?..%{$PR_RED%}%? ↵%{$PR_NO_COLOR%})"
 local user_host='%{$PR_RED%}%}${USER}${PR_CYAN}@%{$PR_BLUE%}% ${HOST}'
 local current_dir='%{$PR_BOLD$PR_BLUE%}%~%{$PR_NO_COLOR%}'
 
+local docker='%{$PR_RED%}‹docker:192.168.99.100›%{$PR_NO_COLOR%}'
+
 source $(brew --prefix nvm)/nvm.sh
 local nvm_node='%{$PR_GREEN%}‹node-$(node -v)›%{$PR_NO_COLOR%}'
 
@@ -49,7 +51,8 @@ fi
 local git_branch='$(git_prompt_info)%{$PR_NO_COLOR%}'
 #PROMPT="${user_host} ${current_dir} ${rvm_ruby} ${git_branch}$PR_PROMPT "
 # PROMPT="╭─${user_host} ${current_dir} ${rvm_ruby} ${git_branch}
-PROMPT="╭─${user_host} ${rvm_ruby} ${nvm_node} ${current_dir} $RPROMPT
+
+PROMPT="╭─${user_host} ${docker} ${nvm_node} ${current_dir}  $RPROMPT
 ╰─$PR_PROMPT "
 RPS1="${return_code}"
 

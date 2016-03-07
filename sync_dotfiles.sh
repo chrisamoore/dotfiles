@@ -13,6 +13,8 @@ fi
 mkdir -p ~/.zsh_backup
 
 mv ~/.zsh_docker ~/.zsh_backup/
+mv ~/.zsh_machine ~/.zsh_backup/
+mv ~/.zsh_kubernetes ~/.zsh_backup/
 mv ~/.zsh_git ~/.zsh_backup/
 mv ~/.zsh_node ~/.zsh_backup/
 mv ~/.zsh_paths ~/.zsh_backup/
@@ -36,6 +38,7 @@ mv ~/.oh-my-zsh/themes/cam.zsh-theme ~/.zsh_backup/
 ln -s ~/Code/dotfiles/ohmyzsh/cam.zsh-theme ~/.oh-my-zsh/themes
 
 ln -s ~/Code/dotfiles/.zsh_docker ~/
+ln -s ~/Code/dotfiles/.zsh_kubernetes ~/
 ln -s ~/Code/dotfiles/.zsh_git ~/
 ln -s ~/Code/dotfiles/.zsh_node ~/
 ln -s ~/Code/dotfiles/.zsh_paths ~/
