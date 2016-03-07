@@ -43,12 +43,11 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 # for the c alias (syntax highlighted cat)
 sudo easy_install Pygments
 
-gem install genghisapp
+# gem install genghisapp
 
 # chrome canary as default
 # on a mac you can set chrome canary as your default inside of Safari preferences :)
 
-sh ./.osx
 
 sh ~/Code/dotfiles/Brewfile
 sh ~/Code/dotfiles/Caskfile
@@ -63,4 +62,5 @@ sh ~/Code/dotfiles/sync_dotfiles.sh
 ln -s ~/Code/dotfiles/sublimeText3/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 ln -s ~/Code/dotfiles/sublimeText3/Cam.tmTheme ~/Library/Application\ Support/Sublime\ Text\ 3/Cache/Color\ Scheme\ -\ Default/
 
+sh ./.osx
 

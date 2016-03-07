@@ -1170,9 +1170,11 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>927 567 924 485 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 157 1669 1020 0 0 1920 1177 </string>
+	<string>52 787 885 376 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>275 123 885 376 0 0 1920 1177 </string>
+	<string>178 316 885 376 0 0 1920 1177 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>341 684 885 376 0 0 1920 1200 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1230,11 +1232,11 @@
 			<key>Ansi 13 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.094327628612518311</real>
 				<key>Green Component</key>
-				<real>0.3333333432674408</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<real>0.65690445899963379</real>
 			</dict>
 			<key>Ansi 14 Color</key>
 			<dict>
@@ -1275,11 +1277,11 @@
 			<key>Ansi 4 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.50874930620193481</real>
+				<real>0.46514299511909485</real>
 				<key>Green Component</key>
-				<real>0.45599415898323059</real>
+				<real>0.50874930620193481</real>
 				<key>Red Component</key>
-				<real>0.27396082878112793</real>
+				<real>0.0</real>
 			</dict>
 			<key>Ansi 5 Color</key>
 			<dict>
@@ -1742,7 +1744,7 @@
 			<key>Scrollback With Status Bar</key>
 			<false/>
 			<key>Scrollback in Alternate Screen</key>
-			<true/>
+			<false/>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -2761,7 +2763,7 @@
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>455603606.672809</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>456465515.79349899</real>
+	<real>463111007.51507801</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -2824,7 +2826,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-06-20T03:57:09Z</date>
+	<date>2015-09-08T05:40:49Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
