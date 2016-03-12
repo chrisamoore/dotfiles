@@ -77,8 +77,9 @@ npm install -g strongloop ionic yo bower
 * `Caskfile - homebrew cask install apps initialization
 
 #### git, brah
+* `.gitconfig.local` - (Optional) Put your private git settings (like username and email) here.  They'll be used by
+  Git, but won't be put into source control.
 * `.git`
 * `.gitattributes`
 * `.gitconfig`
 * `.gitignore`
-
