@@ -35,7 +35,7 @@ local return_code="%(?..%{$PR_RED%}%? ↵%{$PR_NO_COLOR%})"
 local user_host='%{$PR_RED%}%}${USER}${PR_CYAN}@%{$PR_BLUE%}% ${HOST}'
 local current_dir='%{$PR_BOLD$PR_BLUE%}%~%{$PR_NO_COLOR%}'
 
-local docker='%{$PR_RED%}‹docker:192.168.99.100›%{$PR_NO_COLOR%}'
+local docker='%{$PR_RED%}‹docker:$DOCKER_MACHINE_NAME:$DOCKER_URL›%{$PR_NO_COLOR%}'
 
 source $(brew --prefix nvm)/nvm.sh
 local nvm_node='%{$PR_GREEN%}‹node-$(node -v)›%{$PR_NO_COLOR%}'

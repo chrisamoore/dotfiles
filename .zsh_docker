@@ -74,3 +74,4 @@ dmrebuild () {
 
 dm start dev
 dsrc dev
+export DOCKER_URL=`DEBUG=false docker-machine ip dev`
