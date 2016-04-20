@@ -110,6 +110,10 @@ function commit(){
   fi
 }
 
+function gsync(){
+  gco $2 && gpl $1 $2
+}
+
 function gap(){
  gad && gcm $1 && gph $2 $3
 }

@@ -57,8 +57,7 @@ alias fs="stat -f \"%z bytes\""
 
 # Empty the Trash on all mounted volumes and the main HDD
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
-alias kmongo='mongo admin --eval "db.shutdownServer()" > /dev/null'
+# alias kmongo='mongo admin --eval "db.shutdownServer()" > /dev/null'
 alias admongo='cd ~/Code/tools/adminMongo && pm2 start app.js -i 1 -n mongo-admin && cd -'
-alias dropmongo='sh ~/Code/vrs-cluster/scripts/drop-db.sh'
 alias lci='. ./env/local.env && npm run ci'
 alias cov='cd ./coverage && http-server'

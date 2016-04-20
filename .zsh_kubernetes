@@ -1,1 +1,1 @@
-alias kubectl="docker run -it --rm -v /Users/chrismoore:/Users/chrismoore $DOCKER_REGISTRY/kubectl:latest kubectl --server=$KUBERNETES"
+alias kubectl="docker run -it --rm -v $HOME:$HOME $DOCKER_REGISTRY/kubectl:latest kubectl --server=$KUBERNETES"

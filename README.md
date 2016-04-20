@@ -2,7 +2,7 @@
 - Forked from [Paul Irish](https://github.com/paulirish/dotfiles) and Modded slightly
 
 
-## Installation 
+## Installation
 
 ```bash
 git clone git@github.com:chrisamoore/dotfiles.git && cd dotfiles && sh ./install_deps.sh
@@ -18,7 +18,7 @@ git clone git@github.com:chrisamoore/dotfiles.git && cd dotfiles && sh ./sync_do
 To update later on, just run the sync again.
 
 ## Terminal preview
-![cam-term](http://camdesigns.net/images/term-cam.png)
+![cam-term](./.extra/prev.png)
 
 
 <hr>

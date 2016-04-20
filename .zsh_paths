@@ -1,4 +1,4 @@
 export NPM_BIN='./node_modules/.bin'
 export PATH="$NPM_BIN:/usr/local/sbin:$PATH"
-export DROID="$HOME/Library/Android/sdk/tools/"
-export PATH="$DROID:$PATH"
+# export DROID="$HOME/Library/Android/sdk/tools/"
+# export PATH="$DROID:$PATH"
