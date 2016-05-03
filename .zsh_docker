@@ -2,6 +2,8 @@
 # Docker GET THESE FROM DOCKER_MACHINE     #
 ############################################
 
+export DOCKER_URL=`DEBUG=false docker-machine ip dev`
+
 # Get latest container ID
 alias dl="docker ps -l -q"
 
@@ -67,11 +69,10 @@ dpu() { docker push $DOCKER_REGISTRY/$1; }
 dlo() {docker logs $1; }
 
 dmrebuild () {
-  docker-machine rm dev
-  docker-machine create -d virtualbox --virtualbox-dns-proxy --virtualbox-host-dns-resolver --virtualbox-memory=4096 --virtualbox-cpu-count "2" --engine-insecure-registry=$DOCKER_REGISTRY dev
-  dsrc dev
+  docker-machine rm $1
+  docker-machine create -d virtualbox --virtualbox-host-dns-resolver --virtualbox-memory=8192 --virtualbox-cpu-count "2" --engine-insecure-registry=$DOCKER_REGISTRY $1
+  dsrc $1
 }
 
 dm start dev
 dsrc dev
-export DOCKER_URL=`DEBUG=false docker-machine ip dev`

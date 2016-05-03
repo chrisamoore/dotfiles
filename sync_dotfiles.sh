@@ -57,6 +57,10 @@ ln -s ~/Code/dotfiles/.wgetrc ~/
 ln -s ~/Code/dotfiles/.gitconfig ~/
 ln -s ~/Code/dotfiles/.gitignore_global ~/
 
+touch ~/.zsh_machine
+touch ~/.zsh_vpn
+touch ~/.gitconfig.local
+
 # Install the Solarized Dark theme for iTerm
 open "${HOME}/Code/dotfiles/iterm2/cam.itermcolors"
 

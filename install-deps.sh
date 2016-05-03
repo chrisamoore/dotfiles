@@ -1,4 +1,5 @@
 #!/bin/bash
+sh ./.osx
 
 # up to you (me) if you want to run this as a file or copy paste at your leisure
 
@@ -10,57 +11,59 @@
 # rvm for the rubiess
 curl -L https://get.rvm.io | bash -s stable --ruby
 
-# https://github.com/isaacs/nave
-# needs npm, obviously.
-# TODO: I think i'd rather curl down the nave.sh, symlink it into /bin and use that for initial node install.
-# npm install -g nave
-
 # homebrew!
 # you need the code CLI tools YOU FOOL.
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-# https://github.com/rupa/z
-# z, oh how i love you
-# cd ~/code
-# git clone https://github.com/rupa/z.git
-# chmod +x ~/code/z/z.sh
-# also consider moving over your current .z file if possible. it's painful to rebuild :)
-
-# z binary is already referenced from .bash_profile
-
-# https://github.com/thebitguru/play-button-itunes-patch
-# disable itunes opening on media keys
-# cd ~/code
-# git clone https://github.com/thebitguru/play-button-itunes-patch
-
-# my magic photobooth symlink -> dropbox. I love it.
-# first move Photo Booth folder out of Pictures
-# then start Photo Booth. It'll ask where to put the library.
-# put it in Dropbox/public
-
-# now you can record photobooth videos quickly and they upload to dropbox DURING RECORDING
-# then you grab public URL and send off your video message in a heartbeat.
-
 # for the c alias (syntax highlighted cat)
 sudo easy_install Pygments
 
-# gem install genghisapp
-
-# chrome canary as default
-# on a mac you can set chrome canary as your default inside of Safari preferences :)
-
-
 sh ~/Code/dotfiles/Brewfile
+
+curl -L https://raw.githubusercontent.com/zsh-users/antigen/master/antigen.zsh > ~/antigen.zsh
+source ~/antigen.zsh
+
 sh ~/Code/dotfiles/Caskfile
-
-# Setup Mongo
-sudo mkdir -p /data/db
-sudo chown -R $(whoami) /data
-
 sh ~/Code/dotfiles/sync_dotfiles.sh
+
+nvm install v5
+nvm alias default v5
+
+src
+
+echo "run 'docker-machine create -d virtualbox --virtualbox-host-dns-resolver --virtualbox-memory=8192 --virtualbox-cpu-count=2 --engine-insecure-registry=$DOCKER_REGISTRY dev'"
 
 #setup Sublime
 ln -s ~/Code/dotfiles/sublimeText3/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-ln -s ~/Code/dotfiles/sublimeText3/Cam.tmTheme ~/Library/Application\ Support/Sublime\ Text\ 3/Cache/Color\ Scheme\ -\ Default/
 
-sh ./.osx
+touch ~/.gitconfig.local
 
+echo " Add this to your ~/.gitconfig.local file:
+
+# This is Git's per-user configuration file.
+[core]
+# Please adapt and uncomment the following lines:
+  user = cmoore
+  name = Christopher A. Moore
+  email = you@email.com
+[user]
+  name = Christopher A. Moore
+  email = you@email.com
+"
+touch ~/.npmrc
+
+echo " Run this to authenticate into your npm registry
+npm set registry npm.company.com
+npm set strict-ssl false
+npm login
+"
+
+echo "Add this to your ~/.zsh_machine
+export DOCKER_REGISTRY=docker.company.com:5000
+"
+
+echo "Add this to your ~/.zsh_machine
+export KUBERNETES=http://kuber-master.company.com:8080
+"
+
+echo "Create your docker machine:
+docker-machine create -d virtualbox --virtualbox-host-dns-resolver --virtualbox-memory=8192 --virtualbox-cpu-count '2' --engine-insecure-registry=$DOCKER_REGISTRY dev"
