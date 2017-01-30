@@ -27,7 +27,8 @@
 	"font_face": "Droid Sans Mono",
 	"font_options":
 	[
-		"subpixel_antialias"
+		"subpixel_antialias",
+		"gray_antialias"
 	],
 	"font_size": 16,
 	"highlight_line": true,

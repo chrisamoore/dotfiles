@@ -20,15 +20,24 @@ sudo easy_install Pygments
 sh ~/Code/dotfiles/Brewfile
 
 curl -L https://raw.githubusercontent.com/zsh-users/antigen/master/antigen.zsh > ~/antigen.zsh
-source ~/antigen.zsh
+# source ~/antigen.zsh
 
 sh ~/Code/dotfiles/Caskfile
 sh ~/Code/dotfiles/sync_dotfiles.sh
 
-nvm install v5
-nvm alias default v5
+# Setup NVM
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+
+nvm install node
+nvm alias default node
 
 src
+
+ npm i -g yo && \
+ npm i -g generator-loopback \
+          pm2 \
+          npm-check-updates \
+          http-server
 
 echo "run 'docker-machine create -d virtualbox --virtualbox-host-dns-resolver --virtualbox-memory=8192 --virtualbox-cpu-count=2 --engine-insecure-registry=$DOCKER_REGISTRY dev'"
 
@@ -42,11 +51,11 @@ echo " Add this to your ~/.gitconfig.local file:
 # This is Git's per-user configuration file.
 [core]
 # Please adapt and uncomment the following lines:
-  user = cmoore
-  name = Christopher A. Moore
+  user = username
+  name = Your name
   email = you@email.com
 [user]
-  name = Christopher A. Moore
+  name = Your name
   email = you@email.com
 "
 touch ~/.npmrc

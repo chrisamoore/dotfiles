@@ -42,7 +42,7 @@ brew install zopfli
 brew install python
 brew install caskroom/cask/brew-cask
 brew install multitail
-brew install docker docker-compose docker-machine
+brew install jq
 
 # Remove outdated versions from the cellar
 brew cleanup
